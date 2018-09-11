@@ -11,6 +11,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "COMPILEDWITHC11"
+  "ROSCONSOLE_BACKEND_LOG4CXX"
+  "ROS_PACKAGE_NAME=\"ORB_SLAM2\""
   )
 
 # The include file search paths:
@@ -20,6 +22,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "/usr/include/eigen3"
   "/usr/local/lib/cmake/Pangolin/../../../include"
+  "/opt/ros/indigo/include"
+  "/usr/include/pcl-1.7"
+  "/usr/include/ni"
+  "/usr/include/vtk-5.8"
   "/usr/local/include"
   )
 

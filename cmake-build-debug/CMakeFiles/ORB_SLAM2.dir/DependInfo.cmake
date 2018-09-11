@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/ORBmatcher.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/ORBmatcher.cc.o"
   "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/Optimizer.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/Optimizer.cc.o"
   "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/PnPsolver.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/PnPsolver.cc.o"
+  "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/PointCloudMapping.cpp" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o"
   "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/Sim3Solver.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o"
   "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/System.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/System.cc.o"
   "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/Tracking.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/ORB_SLAM2.dir/src/Tracking.cc.o"
@@ -29,6 +30,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "COMPILEDWITHC11"
+  "ROSCONSOLE_BACKEND_LOG4CXX"
+  "ROS_PACKAGE_NAME=\"ORB_SLAM2\""
   )
 
 # The include file search paths:
@@ -38,6 +41,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "/usr/include/eigen3"
   "/usr/local/lib/cmake/Pangolin/../../../include"
+  "/opt/ros/indigo/include"
+  "/usr/include/pcl-1.7"
+  "/usr/include/ni"
+  "/usr/include/vtk-5.8"
   "/usr/local/include"
   )
 

@@ -513,6 +513,30 @@ CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o.provides: CMakeFiles/ORB_SLAM2.dir/src/
 CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o.provides.build: CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o
 
 
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o: CMakeFiles/ORB_SLAM2.dir/flags.make
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o: ../src/PointCloudMapping.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/PointCloudMapping.cpp
+
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/PointCloudMapping.cpp > CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.i
+
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/src/PointCloudMapping.cpp -o CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.s
+
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.requires:
+
+.PHONY : CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.requires
+
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.provides: CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ORB_SLAM2.dir/build.make CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.provides.build
+.PHONY : CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.provides
+
+CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.provides.build: CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o
+
+
 # Object files for target ORB_SLAM2
 ORB_SLAM2_OBJECTS = \
 "CMakeFiles/ORB_SLAM2.dir/src/System.cc.o" \
@@ -533,7 +557,8 @@ ORB_SLAM2_OBJECTS = \
 "CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase.cc.o" \
 "CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o" \
 "CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.o" \
-"CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o"
+"CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o" \
+"CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o"
 
 # External object files for target ORB_SLAM2
 ORB_SLAM2_EXTERNAL_OBJECTS =
@@ -557,6 +582,7 @@ ORB_SLAM2_EXTERNAL_OBJECTS =
 ../lib/libORB_SLAM2.so: CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o
 ../lib/libORB_SLAM2.so: CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.o
 ../lib/libORB_SLAM2.so: CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o
+../lib/libORB_SLAM2.so: CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o
 ../lib/libORB_SLAM2.so: CMakeFiles/ORB_SLAM2.dir/build.make
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.8
@@ -568,6 +594,75 @@ ORB_SLAM2_EXTERNAL_OBJECTS =
 ../lib/libORB_SLAM2.so: /usr/local/lib/libpangolin.so
 ../lib/libORB_SLAM2.so: ../Thirdparty/DBoW2/lib/libDBoW2.so
 ../lib/libORB_SLAM2.so: ../Thirdparty/g2o/lib/libg2o.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libpcl_ros_io.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_common.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_octree.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_io.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_kdtree.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_search.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_sample_consensus.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_filters.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_features.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_keypoints.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_segmentation.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_visualization.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_outofcore.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_registration.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_recognition.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_surface.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_people.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_tracking.so
+../lib/libORB_SLAM2.so: /usr/lib/libpcl_apps.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_serialization.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libqhull.so
+../lib/libORB_SLAM2.so: /usr/lib/libOpenNI.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+../lib/libORB_SLAM2.so: /usr/lib/libvtkCommon.so.5.8.0
+../lib/libORB_SLAM2.so: /usr/lib/libvtkRendering.so.5.8.0
+../lib/libORB_SLAM2.so: /usr/lib/libvtkHybrid.so.5.8.0
+../lib/libORB_SLAM2.so: /usr/lib/libvtkCharts.so.5.8.0
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libdynamic_reconfigure_config_init_mutex.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libnodeletlib.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libbondcpp.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libclass_loader.so
+../lib/libORB_SLAM2.so: /usr/lib/libPocoFoundation.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libdl.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libroslib.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librospack.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librosbag.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librosbag_storage.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libroslz4.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/liblz4.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libtopic_tools.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libtf.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libtf2_ros.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libactionlib.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libmessage_filters.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libroscpp.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libxmlrpcpp.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libtf2.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libroscpp_serialization.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librosconsole.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librosconsole_log4cxx.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librosconsole_backend_interface.so
+../lib/libORB_SLAM2.so: /usr/lib/liblog4cxx.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/librostime.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+../lib/libORB_SLAM2.so: /opt/ros/indigo/lib/libcpp_common.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8
@@ -587,15 +682,15 @@ ORB_SLAM2_EXTERNAL_OBJECTS =
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libX11.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libXext.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libdc1394.so
-../lib/libORB_SLAM2.so: /usr/lib/libOpenNI.so
 ../lib/libORB_SLAM2.so: /usr/local/lib/x86_64-linux-gnu/libuvc.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libpng.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libz.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libtiff.so
 ../lib/libORB_SLAM2.so: /usr/lib/x86_64-linux-gnu/libIlmImf.so
+../lib/libORB_SLAM2.so: /usr/lib/libOpenNI.so
 ../lib/libORB_SLAM2.so: CMakeFiles/ORB_SLAM2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX shared library ../lib/libORB_SLAM2.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library ../lib/libORB_SLAM2.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ORB_SLAM2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -622,6 +717,7 @@ CMakeFiles/ORB_SLAM2.dir/requires: CMakeFiles/ORB_SLAM2.dir/src/KeyFrameDatabase
 CMakeFiles/ORB_SLAM2.dir/requires: CMakeFiles/ORB_SLAM2.dir/src/Sim3Solver.cc.o.requires
 CMakeFiles/ORB_SLAM2.dir/requires: CMakeFiles/ORB_SLAM2.dir/src/Initializer.cc.o.requires
 CMakeFiles/ORB_SLAM2.dir/requires: CMakeFiles/ORB_SLAM2.dir/src/Viewer.cc.o.requires
+CMakeFiles/ORB_SLAM2.dir/requires: CMakeFiles/ORB_SLAM2.dir/src/PointCloudMapping.cpp.o.requires
 
 .PHONY : CMakeFiles/ORB_SLAM2.dir/requires
 

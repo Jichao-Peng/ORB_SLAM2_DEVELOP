@@ -57,6 +57,10 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
        exit(-1);
     }
 
+    //PointCloudMapping数据
+    float mResolution = fsSettings["PointCloudMapping.Resolution"];
+    float mMeank = fsSettings["PointCloudMapping.Meank"];
+    float mThresh = fsSettings["PointCloudMapping.Thresh"];
 
     //Load ORB Vocabulary
     cout << endl << "Loading ORB Vocabulary. This could take a while..." << endl;
@@ -83,8 +87,9 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
     //Initialize the Tracking thread
     //(it will live in the main thread of execution, the one that called this constructor)
+    mpPointCloudMapping = make_shared<PointCloudMapping>(mResolution,mMeank,mThresh);
     mpTracker = new Tracking(this, mpVocabulary, mpFrameDrawer, mpMapDrawer,
-                             mpMap, mpKeyFrameDatabase, strSettingsFile, mSensor);
+                             mpMap, mpKeyFrameDatabase, mpPointCloudMapping, strSettingsFile, mSensor);
 
     //Initialize the Local Mapping thread and launch
     mpLocalMapper = new LocalMapping(mpMap, mSensor==MONOCULAR);
@@ -302,6 +307,7 @@ void System::Shutdown()
 {
     mpLocalMapper->RequestFinish();
     mpLoopCloser->RequestFinish();
+    //mpPointCloudMapping->Shutdown();
     if(mpViewer)
     {
         mpViewer->RequestFinish();

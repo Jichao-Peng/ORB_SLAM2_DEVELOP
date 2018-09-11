@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -std=c++11 -O3 -Wno-deprecated -std=c++11 -g  -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/gtest/src -Wl,-rpath,/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/gtest/src -lpthread 

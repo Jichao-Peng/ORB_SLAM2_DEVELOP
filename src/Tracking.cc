@@ -49,10 +49,10 @@ using namespace std;
 namespace ORB_SLAM2
 {
 
-Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor):
+Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, shared_ptr<PointCloudMapping> pPointCloudMapping, const string &strSettingPath, const int sensor):
     mState(NO_IMAGES_YET), mSensor(sensor), mbOnlyTracking(false), mbVO(false), mpORBVocabulary(pVoc),
     mpKeyFrameDB(pKFDB), mpInitializer(static_cast<Initializer*>(NULL)), mpSystem(pSys), mpViewer(NULL),
-    mpFrameDrawer(pFrameDrawer), mpMapDrawer(pMapDrawer), mpMap(pMap), mnLastRelocFrameId(0)
+    mpFrameDrawer(pFrameDrawer), mpMapDrawer(pMapDrawer), mpMap(pMap), mnLastRelocFrameId(0), mpPointCloudMapping( pPointCloudMapping )
 {
     // Load camera parameters from settings file //读入相机参数
 
@@ -215,6 +215,11 @@ cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const d
 {
     mImGray = imRGB;
     cv::Mat imDepth = imD;
+
+    //用来将RGB和深度传递给点云模块
+    mImRGB = imRGB;
+    mImDepth = imD;
+
 
     if(mImGray.channels()==3)//RGBD或者RGBA转成灰度图
     {
@@ -1168,6 +1173,11 @@ void Tracking::CreateNewKeyFrame()
     mpLocalMapper->InsertKeyFrame(pKF);
 
     mpLocalMapper->SetNotStop(false);
+
+    //获取当前所有的关键帧，并给点云模块插入关键帧
+    vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
+    mpPointCloudMapping->InsertKeyFrame( pKF, this->mImRGB, this->mImDepth, pKF->mnFrameId ,vpKFs);
+
 
     mnLastKeyFrameId = mCurrentFrame.mnId;
     mpLastKeyFrame = pKF;
