@@ -37,7 +37,7 @@
 #include "Viewer.h"
 #include "PointCloudMapping.h"
 
-class PointCloudMapping;
+
 
 namespace ORB_SLAM2
 {
@@ -48,6 +48,8 @@ class Map;
 class Tracking;
 class LocalMapping;
 class LoopClosing;
+class PointCloudMapping;
+class MapDrawer;
 
 class System
 {

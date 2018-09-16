@@ -721,6 +721,8 @@ MapPoint.h
 ../include/MapPoint.h
 KeyFrame.h
 ../include/KeyFrame.h
+PointCloudMapping.h
+../include/PointCloudMapping.h
 pangolin/pangolin.h
 -
 mutex

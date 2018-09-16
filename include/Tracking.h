@@ -41,11 +41,12 @@
 
 #include <mutex>
 
-class PointCloudMapping;
+
 
 namespace ORB_SLAM2
 {
 
+class PointCloudMapping;
 class Viewer;
 class FrameDrawer;
 class Map;

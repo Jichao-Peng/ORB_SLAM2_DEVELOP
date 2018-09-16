@@ -217,9 +217,10 @@ cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const d
     cv::Mat imDepth = imD;
 
     //用来将RGB和深度传递给点云模块
-    mImRGB = imRGB;
-    mImDepth = imD;
-
+    imRGB.copyTo(mImRGB);
+    imD.copyTo(mImDepth);
+    if((fabs(mDepthMapFactor-1.0f)>1e-5) || mImDepth.type()!=CV_32F)
+        mImDepth.convertTo(mImDepth,CV_32F,mDepthMapFactor);
 
     if(mImGray.channels()==3)//RGBD或者RGBA转成灰度图
     {
@@ -1176,7 +1177,7 @@ void Tracking::CreateNewKeyFrame()
 
     //获取当前所有的关键帧，并给点云模块插入关键帧
     vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
-    mpPointCloudMapping->InsertKeyFrame( pKF, this->mImRGB, this->mImDepth, pKF->mnFrameId ,vpKFs);
+    mpPointCloudMapping->InsertKeyFrame( pKF, mImRGB, mImDepth, pKF->mnFrameId ,vpKFs);
 
 
     mnLastKeyFrameId = mCurrentFrame.mnId;

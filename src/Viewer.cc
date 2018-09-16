@@ -130,7 +130,8 @@ void Viewer::Run()
         if(menuShowKeyFrames || menuShowGraph)
             mpMapDrawer->DrawKeyFrames(menuShowKeyFrames,menuShowGraph);
         if(menuShowPoints)
-            mpMapDrawer->DrawMapPoints();
+            //mpMapDrawer->DrawMapPoints();
+            mpMapDrawer->DrawPointCloudMap();
 
         pangolin::FinishFrame();
 

@@ -38,8 +38,8 @@ int main(int argc, char **argv)//主函数入口
 {
     string argv1 = "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/Vocabulary/ORBvoc.txt";
     string argv2 = "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/Examples/RGB-D/TUM1.yaml";
-    string argv3 = "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/Data/rgbd_dataset_freiburg1_desk";
-    string argv4 = "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/Data/rgbd_dataset_freiburg1_desk/associations.txt";
+    string argv3 = "/home/leo/Desktop/ORB_SLAM2_Changing/Data/rgbd_dataset_freiburg1_desk";
+    string argv4 = "/home/leo/Desktop/ORB_SLAM2_Changing/Data/rgbd_dataset_freiburg1_desk/associations.txt";
 
     // Retrieve paths to images
     vector<string> vstrImageFilenamesRGB;

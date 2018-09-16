@@ -24,6 +24,7 @@
 #include"Map.h"
 #include"MapPoint.h"
 #include"KeyFrame.h"
+#include"PointCloudMapping.h"
 #include<pangolin/pangolin.h>
 
 #include<mutex>
@@ -31,12 +32,17 @@
 namespace ORB_SLAM2
 {
 
+class PointCloudMapping;
+
 class MapDrawer
 {
 public:
-    MapDrawer(Map* pMap, const string &strSettingPath);
+    MapDrawer(Map* pMap, shared_ptr<PointCloudMapping> pPointCloudMapping, const string &strSettingPath);
 
     Map* mpMap;
+
+    //点云地图
+    shared_ptr<PointCloudMapping> mpPointCloudMapping;
 
     void DrawMapPoints();
     void DrawKeyFrames(const bool bDrawKF, const bool bDrawGraph);
@@ -44,6 +50,8 @@ public:
     void SetCurrentCameraPose(const cv::Mat &Tcw);
     void SetReferenceKeyFrame(KeyFrame *pKF);
     void GetCurrentOpenGLCameraMatrix(pangolin::OpenGlMatrix &M);
+
+    void DrawPointCloudMap();
 
 private:
 

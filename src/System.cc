@@ -81,13 +81,16 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     //Create the Map
     mpMap = new Map();
 
+    //点云拼接类
+    mpPointCloudMapping = make_shared<PointCloudMapping>(mResolution,mMeank,mThresh);
+
     //Create Drawers. These are used by the Viewer
     mpFrameDrawer = new FrameDrawer(mpMap);
-    mpMapDrawer = new MapDrawer(mpMap, strSettingsFile);
+    mpMapDrawer = new MapDrawer(mpMap, mpPointCloudMapping ,strSettingsFile);
 
     //Initialize the Tracking thread
     //(it will live in the main thread of execution, the one that called this constructor)
-    mpPointCloudMapping = make_shared<PointCloudMapping>(mResolution,mMeank,mThresh);
+
     mpTracker = new Tracking(this, mpVocabulary, mpFrameDrawer, mpMapDrawer,
                              mpMap, mpKeyFrameDatabase, mpPointCloudMapping, strSettingsFile, mSensor);
 

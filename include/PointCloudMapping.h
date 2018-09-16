@@ -17,8 +17,6 @@
 
 #include "System.h"
 
-using namespace ORB_SLAM2;
-
 namespace ORB_SLAM2
 {
     class KeyPointCloud
@@ -33,48 +31,58 @@ namespace ORB_SLAM2
     };
 }
 
-
-class PointCloudMapping
+namespace ORB_SLAM2
 {
-public:
-    typedef pcl::PointXYZRGBA PointT;
-    typedef pcl::PointCloud<PointT> PointCloud;
+    class PointCloudMapping
+    {
+    public:
+        typedef pcl::PointXYZRGBA PointT;
+        typedef pcl::PointCloud<PointT> PointCloud;
 
-    PointCloudMapping(double resolution ,double meank ,double thresh);
-    void InsertKeyFrame(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id, vector<KeyFrame *> vpKFs);
-    void Shutdown();
-    void Viewer();
-    void UpdateCloud();
-    void Save();
+        PointCloudMapping(double resolution, double meank, double thresh);
 
-    vector<KeyFrame*> mvpCurrentKFs;
-    bool mbPointCloudDealBusy;
-    bool mbLoopBusy;
-    bool mbStop = false;
+        void InsertKeyFrame(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id, vector<KeyFrame *> vpKFs);
+
+        void Shutdown();
+
+        void Run();
+
+        void UpdateCloud();
+
+        void Save();
+
+        PointCloud::Ptr GetGlobalMap();
+
+        vector<KeyFrame *> mvpCurrentKFs;
+        bool mbPointCloudDealBusy;
+        bool mbLoopBusy = false;
+        bool mbStop = false;
 
 
-protected:
-    PointCloud::Ptr GeneratePointCloud(KeyFrame* kf, cv::Mat& color, cv::Mat& depth);
+    protected:
+        PointCloud::Ptr GeneratePointCloud(KeyFrame *kf, cv::Mat &color, cv::Mat &depth);
 
-    shared_ptr<thread>  mptCloudMapViewer;
-    PointCloud::Ptr mpGlobalMap;
-    bool mbShutDownFlag =false;
-    mutex mMutexShutdown;
-    mutex mMutexKeyFrameDeal;
-    mutex mMutexKeyFrameUpdate;
-    condition_variable  mConKeyFrameUpdated;
+        shared_ptr<thread> mptCloudMapViewer;
+        PointCloud::Ptr mpGlobalMap;
+        bool mbShutDownFlag = false;
+        mutex mMutexShutdown;
+        mutex mMutexKeyFrameDeal;
+        mutex mMutexKeyFrameUpdate;
+        mutex mMutexGlobalMapDeal;
+        condition_variable mConKeyFrameUpdated;
 
-    vector<KeyPointCloud*> mvpKeyPointClouds;
-    vector<KeyFrame*>  mvpKeyFrames;
+        vector<KeyPointCloud *> mvpKeyPointClouds;
+        vector<KeyFrame *> mvpKeyFrames;
 
-    unsigned short musLastKeyFrameSize = 0;
+        unsigned short musLastKeyFrameSize = 0;
 
-    double mResolution = 0.1;
-    double mMeank = 50;
-    double mThresh = 1;
+        double mResolution = 0.1;
+        double mMeank = 50;
+        double mThresh = 1;
 
-    pcl::StatisticalOutlierRemoval<PointT>* mpStatisticalFilter;
-    pcl::VoxelGrid<PointT>* mpVoxelFilter;
-};
+        pcl::StatisticalOutlierRemoval<PointT> *mpStatisticalFilter;
+        pcl::VoxelGrid<PointT> *mpVoxelFilter;
+    };
 
+}
 #endif //ORB_SLAM2_POINTCLOUDMAPPING_H

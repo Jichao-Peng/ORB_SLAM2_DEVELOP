@@ -28,7 +28,7 @@ namespace ORB_SLAM2
 {
 
 
-MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap)
+MapDrawer::MapDrawer(Map* pMap, shared_ptr<PointCloudMapping> pPointCloudMapping, const string &strSettingPath):mpMap(pMap),mpPointCloudMapping(pPointCloudMapping)
 {
     cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
 
@@ -39,6 +39,30 @@ MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap)
     mCameraSize = fSettings["Viewer.CameraSize"];
     mCameraLineWidth = fSettings["Viewer.CameraLineWidth"];
 
+}
+
+void MapDrawer::DrawPointCloudMap()
+{
+    PointCloudMapping::PointCloud::Ptr pGlobalMap(new PointCloudMapping::PointCloud);
+    pGlobalMap = mpPointCloudMapping->GetGlobalMap();
+
+    cout<<"The size of point cloud is "<<pGlobalMap->points.size()<<endl;
+
+    glPointSize(mPointSize);
+    glBegin(GL_POINTS);
+    for(size_t i=0; i<pGlobalMap->points.size(); i++)
+    {
+        float r = (float)pGlobalMap->points[i].r/256;
+        float g = (float)pGlobalMap->points[i].g/256;
+        float b = (float)pGlobalMap->points[i].b/256;
+        glColor3f(r,g,b);
+
+        float x = pGlobalMap->points[i].x;
+        float y = pGlobalMap->points[i].y;
+        float z = pGlobalMap->points[i].z;
+        glVertex3f(x,y,z);
+    }
+    glEnd();
 }
 
 void MapDrawer::DrawMapPoints()
