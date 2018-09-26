@@ -43,10 +43,10 @@ RM = /home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2
+CMAKE_SOURCE_DIR = /home/leo/Desktop/orb_slam2_project/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2 /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2 /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/leo/Desktop/orb_slam2_project/src /home/leo/Desktop/orb_slam2_project/src /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

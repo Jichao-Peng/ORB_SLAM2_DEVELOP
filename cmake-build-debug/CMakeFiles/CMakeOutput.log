@@ -1,4 +1,4 @@
-The system is: Linux - 4.4.0-31-generic - x86_64
+The system is: Linux - 4.4.0-040400-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,71 +23,80 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_040ed/fast"
-/usr/bin/make -f CMakeFiles/cmTC_040ed.dir/build.make CMakeFiles/cmTC_040ed.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_040ed.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_040ed.dir/testCCompiler.c.o   -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_040ed
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_040ed.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_040ed.dir/testCCompiler.c.o  -o cmTC_040ed -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d93b8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d93b8.dir/build.make CMakeFiles/cmTC_d93b8.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d93b8.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_d93b8.dir/testCCompiler.c.o   -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_d93b8
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d93b8.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d93b8.dir/testCCompiler.c.o  -o cmTC_d93b8 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8a6e2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8a6e2.dir/build.make CMakeFiles/cmTC_8a6e2.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o   -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_8a6e2
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a6e2.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o  -o cmTC_8a6e2 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_28797/fast"
+/usr/bin/make -f CMakeFiles/cmTC_28797.dir/build.make CMakeFiles/cmTC_28797.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o   -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_28797
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28797.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o  -o cmTC_28797 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.4-2ubuntu1~14.04.1' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a6e2' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_8a6e2 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28797' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAN3KdL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_28797 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8a6e2/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8a6e2.dir/build.make CMakeFiles/cmTC_8a6e2.dir/build]
-  ignore line: [make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o   -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_8a6e2]
-  ignore line: [/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a6e2.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o  -o cmTC_8a6e2 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_28797/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_28797.dir/build.make CMakeFiles/cmTC_28797.dir/build]
+  ignore line: [make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o   -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_28797]
+  ignore line: [/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28797.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o  -o cmTC_28797 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.4-2ubuntu1~14.04.1' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a6e2' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_8a6e2 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+  ignore line: [gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28797' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAN3KdL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_28797 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccAN3KdL.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -100,19 +109,19 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8a6e2] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [cmTC_28797] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib]
     arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_8a6e2.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..]
+    arg [CMakeFiles/cmTC_28797.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -122,39 +131,39 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
   collapse library dir [/lib/../lib] ==> [/lib]
   collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> [/usr/lib]
   implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3fd0c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3fd0c.dir/build.make CMakeFiles/cmTC_3fd0c.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3fd0c.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_3fd0c.dir/feature_tests.c.o   -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_3fd0c
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fd0c.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_3fd0c.dir/feature_tests.c.o  -o cmTC_3fd0c -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_128f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_128f8.dir/build.make CMakeFiles/cmTC_128f8.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_128f8.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_128f8.dir/feature_tests.c.o   -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_128f8
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_128f8.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_128f8.dir/feature_tests.c.o  -o cmTC_128f8 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -164,17 +173,17 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1b767/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1b767.dir/build.make CMakeFiles/cmTC_1b767.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1b767.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_1b767.dir/feature_tests.c.o   -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1b767
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b767.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_1b767.dir/feature_tests.c.o  -o cmTC_1b767 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_95434/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95434.dir/build.make CMakeFiles/cmTC_95434.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95434.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_95434.dir/feature_tests.c.o   -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_95434
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95434.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_95434.dir/feature_tests.c.o  -o cmTC_95434 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -184,17 +193,17 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0c0b3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0c0b3.dir/build.make CMakeFiles/cmTC_0c0b3.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0c0b3.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_0c0b3.dir/feature_tests.c.o   -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_0c0b3
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c0b3.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_0c0b3.dir/feature_tests.c.o  -o cmTC_0c0b3 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d1791/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d1791.dir/build.make CMakeFiles/cmTC_d1791.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d1791.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_d1791.dir/feature_tests.c.o   -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d1791
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1791.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_d1791.dir/feature_tests.c.o  -o cmTC_d1791 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -202,68 +211,77 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_205a6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_205a6.dir/build.make CMakeFiles/cmTC_205a6.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_205a6.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_205a6.dir/testCXXCompiler.cxx.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_205a6
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_205a6.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_205a6.dir/testCXXCompiler.cxx.o  -o cmTC_205a6 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_75d2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_75d2a.dir/build.make CMakeFiles/cmTC_75d2a.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_75d2a.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_75d2a.dir/testCXXCompiler.cxx.o -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_75d2a
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75d2a.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_75d2a.dir/testCXXCompiler.cxx.o  -o cmTC_75d2a -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_06f94/fast"
-/usr/bin/make -f CMakeFiles/cmTC_06f94.dir/build.make CMakeFiles/cmTC_06f94.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_06f94
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06f94.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_06f94 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTC_0f444/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f444.dir/build.make CMakeFiles/cmTC_0f444.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_0f444
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f444.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_0f444 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.4-2ubuntu1~14.04.1' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_06f94' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_06f94 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0f444' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKbLbF6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0f444 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_06f94/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_06f94.dir/build.make CMakeFiles/cmTC_06f94.dir/build]
-  ignore line: [make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_06f94]
-  ignore line: [/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06f94.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_06f94 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0f444/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0f444.dir/build.make CMakeFiles/cmTC_0f444.dir/build]
+  ignore line: [make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_0f444]
+  ignore line: [/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f444.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_0f444 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.4' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.4-2ubuntu1~14.04.1' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_06f94' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_06f94 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+  ignore line: [gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0f444' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKbLbF6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_0f444 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccKbLbF6.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -276,19 +294,19 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_06f94] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [cmTC_0f444] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib]
     arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_06f94.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..]
+    arg [CMakeFiles/cmTC_0f444.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -296,39 +314,39 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib] ==> [/usr/lib]
   collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
   collapse library dir [/lib/../lib] ==> [/lib]
   collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> [/usr/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
   implicit fwks: []
 
 
 
 
-Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4527d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4527d.dir/build.make CMakeFiles/cmTC_4527d.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_4527d.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++1y -o CMakeFiles/cmTC_4527d.dir/feature_tests.cxx.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4527d
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4527d.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_4527d.dir/feature_tests.cxx.o  -o cmTC_4527d -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_1e646/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e646.dir/build.make CMakeFiles/cmTC_1e646.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e646.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_1e646.dir/feature_tests.cxx.o -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_1e646
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e646.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_1e646.dir/feature_tests.cxx.o  -o cmTC_1e646 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -336,20 +354,20 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
     Feature record: CXX_FEATURE:1cxx_alignas
     Feature record: CXX_FEATURE:1cxx_alignof
     Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
     Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_binary_literals
     Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
     Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
     Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
     Feature record: CXX_FEATURE:1cxx_default_function_template_args
     Feature record: CXX_FEATURE:1cxx_defaulted_functions
     Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
     Feature record: CXX_FEATURE:1cxx_delegating_constructors
     Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_digit_separators
     Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
     Feature record: CXX_FEATURE:1cxx_explicit_conversions
     Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
@@ -357,11 +375,11 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
     Feature record: CXX_FEATURE:1cxx_final
     Feature record: CXX_FEATURE:1cxx_func_identifier
     Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
     Feature record: CXX_FEATURE:1cxx_inheriting_constructors
     Feature record: CXX_FEATURE:1cxx_inline_namespaces
     Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
     Feature record: CXX_FEATURE:1cxx_local_type_template_args
     Feature record: CXX_FEATURE:1cxx_long_long_type
     Feature record: CXX_FEATURE:1cxx_noexcept
@@ -372,7 +390,7 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
     Feature record: CXX_FEATURE:1cxx_raw_string_literals
     Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
     Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
     Feature record: CXX_FEATURE:1cxx_right_angle_brackets
     Feature record: CXX_FEATURE:1cxx_rvalue_references
     Feature record: CXX_FEATURE:1cxx_sizeof_member
@@ -391,17 +409,17 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_75f02/fast"
-/usr/bin/make -f CMakeFiles/cmTC_75f02.dir/build.make CMakeFiles/cmTC_75f02.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_75f02.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_75f02.dir/feature_tests.cxx.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_75f02
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75f02.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_75f02.dir/feature_tests.cxx.o  -o cmTC_75f02 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_7b977/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7b977.dir/build.make CMakeFiles/cmTC_7b977.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7b977.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_7b977.dir/feature_tests.cxx.o -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7b977
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b977.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_7b977.dir/feature_tests.cxx.o  -o cmTC_7b977 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -464,17 +482,17 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bfa41/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bfa41.dir/build.make CMakeFiles/cmTC_bfa41.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bfa41.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_bfa41.dir/feature_tests.cxx.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_bfa41
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfa41.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_bfa41.dir/feature_tests.cxx.o  -o cmTC_bfa41 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_65db5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65db5.dir/build.make CMakeFiles/cmTC_65db5.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_65db5.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_65db5.dir/feature_tests.cxx.o -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_65db5
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65db5.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_65db5.dir/feature_tests.cxx.o  -o cmTC_65db5 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -534,61 +552,61 @@ make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
-Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5c460/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5c460.dir/build.make CMakeFiles/cmTC_5c460.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5c460.dir/src.cxx.o
-/usr/bin/c++     -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_5c460.dir/src.cxx.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_5c460
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c460.dir/link.txt --verbose=1
-/usr/bin/c++    -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTC_5c460.dir/src.cxx.o  -o cmTC_5c460 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a1fc3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1fc3.dir/build.make CMakeFiles/cmTC_a1fc3.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a1fc3.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_a1fc3.dir/CheckIncludeFile.c.o   -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a1fc3
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1fc3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_a1fc3.dir/CheckIncludeFile.c.o  -o cmTC_a1fc3 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ce1dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce1dc.dir/build.make CMakeFiles/cmTC_ce1dc.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce1dc.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ce1dc.dir/CheckFunctionExists.c.o   -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ce1dc
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce1dc.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ce1dc.dir/CheckFunctionExists.c.o  -o cmTC_ce1dc -rdynamic -lpthread 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX11 succeeded with the following output:
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0454f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0454f.dir/build.make CMakeFiles/cmTC_0454f.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0454f.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -O3 -Wno-deprecated -DCOMPILER_SUPPORTS_CXX11   -std=c++11 -o CMakeFiles/cmTC_0454f.dir/src.cxx.o -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0454f
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0454f.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -O3 -Wno-deprecated -DCOMPILER_SUPPORTS_CXX11    CMakeFiles/cmTC_0454f.dir/src.cxx.o  -o cmTC_0454f -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
 Performing C++ SOURCE FILE Test COMPILER_SUPPORTS_CXX0X succeeded with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7a646/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7a646.dir/build.make CMakeFiles/cmTC_7a646.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7a646.dir/src.cxx.o
-/usr/bin/c++     -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_7a646.dir/src.cxx.o -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_7a646
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a646.dir/link.txt --verbose=1
-/usr/bin/c++    -Wall   -O3 -march=native -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTC_7a646.dir/src.cxx.o  -o cmTC_7a646 -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_bf419/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf419.dir/build.make CMakeFiles/cmTC_bf419.dir/build
+make[1]: Entering directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bf419.dir/src.cxx.o
+/usr/bin/c++     -std=c++11 -O3 -Wno-deprecated -DCOMPILER_SUPPORTS_CXX0X   -std=c++0x -o CMakeFiles/cmTC_bf419.dir/src.cxx.o -c /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_bf419
+/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf419.dir/link.txt --verbose=1
+/usr/bin/c++   -std=c++11 -O3 -Wno-deprecated -DCOMPILER_SUPPORTS_CXX0X    CMakeFiles/cmTC_bf419.dir/src.cxx.o  -o cmTC_bf419 -rdynamic 
+make[1]: Leaving directory `/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 Source file was:
 int main() { return 0; }
-Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_a994e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a994e.dir/build.make CMakeFiles/cmTC_a994e.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a994e.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -Wall  -O3 -march=native     -o CMakeFiles/cmTC_a994e.dir/CheckIncludeFile.c.o   -c /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a994e
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a994e.dir/link.txt --verbose=1
-/usr/bin/cc    -Wall  -O3 -march=native      CMakeFiles/cmTC_a994e.dir/CheckIncludeFile.c.o  -o cmTC_a994e -rdynamic 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_2127a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2127a.dir/build.make CMakeFiles/cmTC_2127a.dir/build
-make[1]: Entering directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2127a.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -Wall  -O3 -march=native  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2127a.dir/CheckFunctionExists.c.o   -c /home/leo/Downloads/clion-2017.1.3/bin/cmake/share/cmake-3.7/Modules/CheckFunctionExists.c
-Linking C executable cmTC_2127a
-/home/leo/Downloads/clion-2017.1.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2127a.dir/link.txt --verbose=1
-/usr/bin/cc    -Wall  -O3 -march=native  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2127a.dir/CheckFunctionExists.c.o  -o cmTC_2127a -rdynamic -lpthread 
-make[1]: Leaving directory `/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-

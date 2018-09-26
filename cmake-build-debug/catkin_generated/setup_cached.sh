@@ -7,7 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/leo/Desktop/learn_rgbdsalm/devel/lib:/opt/ros/indigo/lib:/home/leo/Downloads/clion-2017.1.3/bin"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/devel/lib:/home/leo/catkin_ws/devel/lib:/opt/ros/indigo/lib:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/leo/Downloads/clion-2017.1.3/bin"
+export PKG_CONFIG_PATH="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/leo/Desktop/orb_slam2_project/src:$ROS_PACKAGE_PATH"

@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/devel/setup.sh
+    local-name: /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/devel/setup.sh

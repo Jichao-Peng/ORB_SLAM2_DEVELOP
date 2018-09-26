@@ -4,19 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/usr/src/gtest/src/gtest-all.cc" "/home/leo/Desktop/ORB_SLAM2_Changing/ORB_SLAM2/cmake-build-debug/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "/usr/src/gtest/src/gtest-all.cc" "/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "COMPILEDWITHC11"
   "GTEST_CREATE_SHARED_LIBRARY=1"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/opencv"
   "/usr/src/gtest/include"
   "/usr/src/gtest"
   )
