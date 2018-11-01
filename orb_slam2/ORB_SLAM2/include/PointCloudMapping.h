@@ -41,19 +41,18 @@ namespace ORB_SLAM2
 
         PointCloudMapping(double resolution, double meank, double thresh);
 
-        void InsertKeyFrame(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id, vector<KeyFrame *> vpKFs);
+        void InsertKeyFrame(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id);
 
         void Shutdown();
 
         void Run();
 
-        void UpdateCloud();
+        void UpdateCloud(vector<KeyFrame*> vpKFs);
 
         void Save();
 
         PointCloud::Ptr GetGlobalMap();
 
-        vector<KeyFrame *> mvpCurrentKFs;
         bool mbPointCloudDealBusy;
         bool mbLoopBusy = false;
         bool mbStop = false;
@@ -82,6 +81,8 @@ namespace ORB_SLAM2
 
         pcl::StatisticalOutlierRemoval<PointT> *mpStatisticalFilter;
         pcl::VoxelGrid<PointT> *mpVoxelFilter;
+
+        int mGlobalMapSize = 0;
     };
 
 }

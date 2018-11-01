@@ -8,9 +8,7 @@
 #include<algorithm>
 #include<fstream>
 #include<chrono>
-
 #include<opencv2/core/core.hpp>
-
 #include<System.h>
 
 using namespace std;
@@ -23,8 +21,8 @@ int main(int argc, char **argv)//主函数入口
 {
     string argv1 = "/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/Vocabulary/ORBvoc.txt";
     string argv2 = "/home/leo/Desktop/orb_slam2_project/src/orb_slam2/src/TUM1.yaml";
-    string argv3 = "/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/Data/rgbd_dataset_freiburg1_floor";
-    string argv4 = "/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/Data/rgbd_dataset_freiburg1_floor/associations.txt";
+    string argv3 = "/home/leo/Desktop/Data/rgbd_dataset_freiburg1_360_secret";
+    string argv4 = "/home/leo/Desktop/Data/rgbd_dataset_freiburg1_360_secret/associations.txt";
 
     // Retrieve paths to images
     vector<string> vstrImageFilenamesRGB;
@@ -47,7 +45,7 @@ int main(int argc, char **argv)//主函数入口
     }
 
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
-    ORB_SLAM2::System SLAM(argv1,argv2,ORB_SLAM2::System::RGBD,false);//创建system对象，传入相应的草书，相机参数，设计RGBD格式
+    ORB_SLAM2::System SLAM(argv1,argv2,ORB_SLAM2::System::RGBD,true);//创建system对象，传入相应的草书，相机参数，设计RGBD格式
 
     // Vector for tracking time statistics
     vector<float> vTimesTrack;
@@ -73,38 +71,26 @@ int main(int argc, char **argv)//主函数入口
             return 1;
         }
 
-#ifdef COMPILEDWITHC11
         std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
-#else
-        std::chrono::monotonic_clock::time_point t1 = std::chrono::monotonic_clock::now();
-#endif
-
-        // Pass the image to the SLAM system
         SLAM.TrackRGBD(imRGB,imD,tframe);//将输入传入SLAM系统
-
-#ifdef COMPILEDWITHC11
         std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
-#else
-        std::chrono::monotonic_clock::time_point t2 = std::chrono::monotonic_clock::now();
-#endif
-
-        double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
+        double ttrack= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();//记录一次追踪的时间
 
         vTimesTrack[ni]=ttrack;//记录跟踪时间
-
-        // Wait to load the next frame
+        //等待下一帧 TODO：什么原理没搞明白
         double T=0;
         if(ni<nImages-1)
             T = vTimestamps[ni+1]-tframe;
         else if(ni>0)
             T = tframe-vTimestamps[ni-1];
-
         if(ttrack<T)
             usleep((T-ttrack)*1e6);
     }
 
     // Stop all threads
     SLAM.Shutdown();//关闭所有线程
+
+    while(1){}
 
     // Tracking time statistics
     sort(vTimesTrack.begin(),vTimesTrack.end());
@@ -120,7 +106,7 @@ int main(int argc, char **argv)//主函数入口
     // Save camera trajectory
     SLAM.SaveTrajectoryTUM("CameraTrajectory.txt");
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
-
+    SLAM.mpPointCloudMapping->Save();
     return 0;
 }
 

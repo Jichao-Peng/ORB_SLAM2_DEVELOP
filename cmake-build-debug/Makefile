@@ -257,19 +257,6 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named rgbd_orb_slam2
-
-# Build rule for target.
-rgbd_orb_slam2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rgbd_orb_slam2
-.PHONY : rgbd_orb_slam2
-
-# fast build rule for target.
-rgbd_orb_slam2/fast:
-	$(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build
-.PHONY : rgbd_orb_slam2/fast
-
-#=============================================================================
 # Target rules for targets named pcl_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -699,6 +686,19 @@ geometry_msgs_generate_messages_py/fast:
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named rgbd_orb_slam2_test
+
+# Build rule for target.
+rgbd_orb_slam2_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rgbd_orb_slam2_test
+.PHONY : rgbd_orb_slam2_test
+
+# fast build rule for target.
+rgbd_orb_slam2_test/fast:
+	$(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build
+.PHONY : rgbd_orb_slam2_test/fast
+
+#=============================================================================
 # Target rules for targets named bond_generate_messages_lisp
 
 # Build rule for target.
@@ -887,7 +887,6 @@ help:
 	@echo "... install"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... rgbd_orb_slam2"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_cpp"
@@ -921,6 +920,7 @@ help:
 	@echo "... pcl_ros_gencfg"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... rgbd_orb_slam2_test"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_lisp"

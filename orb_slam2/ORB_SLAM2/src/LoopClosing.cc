@@ -35,9 +35,9 @@
 namespace ORB_SLAM2
 {
 
-LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):
+LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, shared_ptr<PointCloudMapping> pPointCloudMapping, const bool bFixScale):
     mbResetRequested(false), mbFinishRequested(false), mbFinished(true), mpMap(pMap),
-    mpKeyFrameDB(pDB), mpORBVocabulary(pVoc), mpMatchedKF(NULL), mLastLoopKFid(0), mbRunningGBA(false), mbFinishedGBA(true),
+    mpKeyFrameDB(pDB) ,mpORBVocabulary(pVoc), mpPointCloudMapping(pPointCloudMapping), mpMatchedKF(NULL), mLastLoopKFid(0), mbRunningGBA(false), mbFinishedGBA(true),
     mbStopGBA(false), mpThreadGBA(NULL), mbFixScale(bFixScale), mnFullBAIdx(0)
 {
     mnCovisibilityConsistencyTh = 3;
@@ -575,6 +575,7 @@ void LoopClosing::CorrectLoop()
     mpCurrentKF->AddLoopEdge(mpMatchedKF);
 
     // Launch a new thread to perform Global Bundle Adjustment
+    // 开一个线程进行一次全局BA
     mbRunningGBA = true;
     mbFinishedGBA = false;
     mbStopGBA = false;
@@ -675,7 +676,7 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
             // Get Map Mutex
             unique_lock<mutex> lock(mpMap->mMutexMapUpdate);
 
-            // Correct keyframes starting at map first keyframe
+            // Correct keyframes starting at map first keyframe 按照翻译的意思就是从第一帧开始纠正关键帧，一个列表
             list<KeyFrame*> lpKFtoCheck(mpMap->mvpKeyFrameOrigins.begin(),mpMap->mvpKeyFrameOrigins.end());
 
             while(!lpKFtoCheck.empty())
@@ -691,7 +692,6 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
                         cv::Mat Tchildc = pChild->GetPose()*Twc;
                         pChild->mTcwGBA = Tchildc*pKF->mTcwGBA;//*Tcorc*pKF->mTcwGBA;
                         pChild->mnBAGlobalForKF=nLoopKF;
-
                     }
                     lpKFtoCheck.push_back(pChild);
                 }
@@ -741,6 +741,8 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
             mpMap->InformNewBigChange();
 
             mpLocalMapper->Release();
+
+            mpPointCloudMapping->UpdateCloud(mpMap->GetAllKeyFrames());//在此处进行点云全局跟新
 
             cout << "Map updated!" << endl;
         }

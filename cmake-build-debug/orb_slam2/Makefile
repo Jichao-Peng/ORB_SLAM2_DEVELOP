@@ -166,21 +166,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/rule:
-	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/rule
-.PHONY : orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/rule
-
-# Convenience name for target.
-rgbd_orb_slam2: orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/rule
-
-.PHONY : rgbd_orb_slam2
-
-# fast build rule for target.
-rgbd_orb_slam2/fast:
-	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build
-.PHONY : rgbd_orb_slam2/fast
-
-# Convenience name for target.
 orb_slam2/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
 	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 orb_slam2/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 .PHONY : orb_slam2/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
@@ -674,6 +659,21 @@ geometry_msgs_generate_messages_py: orb_slam2/CMakeFiles/geometry_msgs_generate_
 geometry_msgs_generate_messages_py/fast:
 	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make orb_slam2/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/rule:
+	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/rule
+.PHONY : orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/rule
+
+# Convenience name for target.
+rgbd_orb_slam2_test: orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/rule
+
+.PHONY : rgbd_orb_slam2_test
+
+# fast build rule for target.
+rgbd_orb_slam2_test/fast:
+	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build
+.PHONY : rgbd_orb_slam2_test/fast
 
 # Convenience name for target.
 orb_slam2/CMakeFiles/bond_generate_messages_lisp.dir/rule:
@@ -1410,32 +1410,32 @@ ORB_SLAM2/src/Viewer.cc.s:
 	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/ORB_SLAM2.dir/build.make orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Viewer.cc.s
 .PHONY : ORB_SLAM2/src/Viewer.cc.s
 
-src/rgbd_orb_slam2.o: src/rgbd_orb_slam2.cpp.o
+src/rgbd_orb_slam2_test.o: src/rgbd_orb_slam2_test.cpp.o
 
-.PHONY : src/rgbd_orb_slam2.o
+.PHONY : src/rgbd_orb_slam2_test.o
 
 # target to build an object file
-src/rgbd_orb_slam2.cpp.o:
-	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/src/rgbd_orb_slam2.cpp.o
-.PHONY : src/rgbd_orb_slam2.cpp.o
+src/rgbd_orb_slam2_test.cpp.o:
+	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/src/rgbd_orb_slam2_test.cpp.o
+.PHONY : src/rgbd_orb_slam2_test.cpp.o
 
-src/rgbd_orb_slam2.i: src/rgbd_orb_slam2.cpp.i
+src/rgbd_orb_slam2_test.i: src/rgbd_orb_slam2_test.cpp.i
 
-.PHONY : src/rgbd_orb_slam2.i
+.PHONY : src/rgbd_orb_slam2_test.i
 
 # target to preprocess a source file
-src/rgbd_orb_slam2.cpp.i:
-	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/src/rgbd_orb_slam2.cpp.i
-.PHONY : src/rgbd_orb_slam2.cpp.i
+src/rgbd_orb_slam2_test.cpp.i:
+	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/src/rgbd_orb_slam2_test.cpp.i
+.PHONY : src/rgbd_orb_slam2_test.cpp.i
 
-src/rgbd_orb_slam2.s: src/rgbd_orb_slam2.cpp.s
+src/rgbd_orb_slam2_test.s: src/rgbd_orb_slam2_test.cpp.s
 
-.PHONY : src/rgbd_orb_slam2.s
+.PHONY : src/rgbd_orb_slam2_test.s
 
 # target to generate assembly for a file
-src/rgbd_orb_slam2.cpp.s:
-	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/src/rgbd_orb_slam2.cpp.s
-.PHONY : src/rgbd_orb_slam2.cpp.s
+src/rgbd_orb_slam2_test.cpp.s:
+	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug && $(MAKE) -f orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/src/rgbd_orb_slam2_test.cpp.s
+.PHONY : src/rgbd_orb_slam2_test.cpp.s
 
 # Help Target
 help:
@@ -1448,7 +1448,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rgbd_orb_slam2"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_cpp"
@@ -1484,6 +1483,7 @@ help:
 	@echo "... pcl_ros_gencfg"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... rgbd_orb_slam2_test"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... topic_tools_generate_messages_lisp"
@@ -1557,9 +1557,9 @@ help:
 	@echo "... ORB_SLAM2/src/Viewer.o"
 	@echo "... ORB_SLAM2/src/Viewer.i"
 	@echo "... ORB_SLAM2/src/Viewer.s"
-	@echo "... src/rgbd_orb_slam2.o"
-	@echo "... src/rgbd_orb_slam2.i"
-	@echo "... src/rgbd_orb_slam2.s"
+	@echo "... src/rgbd_orb_slam2_test.o"
+	@echo "... src/rgbd_orb_slam2_test.i"
+	@echo "... src/rgbd_orb_slam2_test.s"
 .PHONY : help
 
 

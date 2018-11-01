@@ -46,8 +46,6 @@ void MapDrawer::DrawPointCloudMap()
     PointCloudMapping::PointCloud::Ptr pGlobalMap(new PointCloudMapping::PointCloud);
     pGlobalMap = mpPointCloudMapping->GetGlobalMap();
 
-    cout<<"The size of point cloud is "<<pGlobalMap->points.size()<<endl;
-
     glPointSize(mPointSize);
     glBegin(GL_POINTS);
     for(size_t i=0; i<pGlobalMap->points.size(); i++)

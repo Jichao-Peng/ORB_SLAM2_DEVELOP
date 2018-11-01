@@ -26,11 +26,8 @@
 #include "Map.h"
 #include "ORBVocabulary.h"
 #include "Tracking.h"
-
 #include "KeyFrameDatabase.h"
-
 #include "PointCloudMapping.h"
-
 #include <thread>
 #include <mutex>
 #include "ORB_SLAM2/Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
@@ -41,7 +38,7 @@ namespace ORB_SLAM2
 class Tracking;
 class LocalMapping;
 class KeyFrameDatabase;
-
+class PointCloudMapping;
 
 class LoopClosing
 {
@@ -53,7 +50,7 @@ public:
 
 public:
 
-    LoopClosing(Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc,const bool bFixScale);
+    LoopClosing(Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc, shared_ptr<PointCloudMapping> pPointCloudMapping, const bool bFixScale);
 
     void SetTracker(Tracking* pTracker);
 
@@ -143,9 +140,9 @@ protected:
 
     // Fix scale in the stereo/RGB-D case
     bool mbFixScale;
-
-
     bool mnFullBAIdx;
+
+    shared_ptr<PointCloudMapping> mpPointCloudMapping;
 };
 
 } //namespace ORB_SLAM

@@ -82,13 +82,17 @@ target_link_libraries(${PROJECT_NAME}
         ${catkin_LIBRARIES}
         )
 
-#add_executable(rgbd_orb_slam2_test
-#        src/rgbd_orb_slam2_test.cpp )
-#target_link_libraries(rgbd_orb_slam2_test ${PROJECT_NAME})
+#add_executable(rgbd_orb_slam2_ros_test
+#         src/rgbd_orb_slam2_ros_test.cpp src/rgbd_orb_slam2_ros_test.h)
+#target_link_libraries(rgbd_orb_slam2_ros_test ${PROJECT_NAME})
 
-add_executable(rgbd_orb_slam2
-        src/rgbd_orb_slam2.cpp src/rgbd_orb_slam2.h )
-target_link_libraries(rgbd_orb_slam2 ${PROJECT_NAME})
+add_executable(rgbd_orb_slam2_test
+        src/rgbd_orb_slam2_test.cpp)
+target_link_libraries(rgbd_orb_slam2_test ${PROJECT_NAME})
+
+#add_executable(rgbd_orb_slam2
+#        src/rgbd_orb_slam2.cpp src/rgbd_orb_slam2.h )
+#target_link_libraries(rgbd_orb_slam2 ${PROJECT_NAME})
 
 
 

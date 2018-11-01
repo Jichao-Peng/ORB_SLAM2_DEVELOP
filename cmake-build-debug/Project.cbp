@@ -245,80 +245,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rgbd_orb_slam2">
-				<Option output="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/rgbd_orb_slam2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
-					<Add option="-DCOMPILEDWITHC11"/>
-					<Add option="-DROS_PACKAGE_NAME=&quot;ORB_SLAM2&quot;"/>
-					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/usr/include/opencv"/>
-					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2"/>
-					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/include"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/leo/Downloads/Pangolin/include"/>
-					<Add directory="/home/leo/Downloads/Pangolin/build/src/include"/>
-					<Add directory="/opt/ros/indigo/include"/>
-					<Add directory="/usr/include/pcl-1.7"/>
-					<Add directory="/usr/include/ni"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/usr/include/c++/4.9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
-					<Add directory="/usr/include/c++/4.9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 rgbd_orb_slam2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rgbd_orb_slam2/fast">
-				<Option output="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/rgbd_orb_slam2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
-					<Add option="-DCOMPILEDWITHC11"/>
-					<Add option="-DROS_PACKAGE_NAME=&quot;ORB_SLAM2&quot;"/>
-					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
-					<Add directory="/usr/include/opencv"/>
-					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2"/>
-					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/include"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/home/leo/Downloads/Pangolin/include"/>
-					<Add directory="/home/leo/Downloads/Pangolin/build/src/include"/>
-					<Add directory="/opt/ros/indigo/include"/>
-					<Add directory="/usr/include/pcl-1.7"/>
-					<Add directory="/usr/include/ni"/>
-					<Add directory="/usr/include/vtk-5.8"/>
-					<Add directory="/usr/include/c++/4.9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
-					<Add directory="/usr/include/c++/4.9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 rgbd_orb_slam2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="pcl_msgs_generate_messages_lisp">
 				<Option working_dir="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2"/>
 				<Option type="4"/>
@@ -649,6 +575,80 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rgbd_orb_slam2_test">
+				<Option output="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/rgbd_orb_slam2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ORB_SLAM2&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2"/>
+					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/leo/Downloads/Pangolin/include"/>
+					<Add directory="/home/leo/Downloads/Pangolin/build/src/include"/>
+					<Add directory="/opt/ros/indigo/include"/>
+					<Add directory="/usr/include/pcl-1.7"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/vtk-5.8"/>
+					<Add directory="/usr/include/c++/4.9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
+					<Add directory="/usr/include/c++/4.9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 rgbd_orb_slam2_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rgbd_orb_slam2_test/fast">
+				<Option output="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/rgbd_orb_slam2_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DROS_BUILD_SHARED_LIBS=1"/>
+					<Add option="-DCOMPILEDWITHC11"/>
+					<Add option="-DROS_PACKAGE_NAME=&quot;ORB_SLAM2&quot;"/>
+					<Add option="-DROSCONSOLE_BACKEND_LOG4CXX"/>
+					<Add directory="/usr/include/opencv"/>
+					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2"/>
+					<Add directory="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/include"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/home/leo/Downloads/Pangolin/include"/>
+					<Add directory="/home/leo/Downloads/Pangolin/build/src/include"/>
+					<Add directory="/opt/ros/indigo/include"/>
+					<Add directory="/usr/include/pcl-1.7"/>
+					<Add directory="/usr/include/ni"/>
+					<Add directory="/usr/include/vtk-5.8"/>
+					<Add directory="/usr/include/c++/4.9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
+					<Add directory="/usr/include/c++/4.9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 rgbd_orb_slam2_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="bond_generate_messages_lisp">
 				<Option working_dir="/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2"/>
 				<Option type="4"/>
@@ -904,11 +904,8 @@
 		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/src/Viewer.cc">
 			<Option target="ORB_SLAM2"/>
 		</Unit>
-		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/src/rgbd_orb_slam2.cpp">
-			<Option target="rgbd_orb_slam2"/>
-		</Unit>
-		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/src/rgbd_orb_slam2.h">
-			<Option target="rgbd_orb_slam2"/>
+		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/orb_slam2/src/rgbd_orb_slam2_test.cpp">
+			<Option target="rgbd_orb_slam2_test"/>
 		</Unit>
 		<Unit filename="/usr/src/gtest/src/gtest-all.cc">
 			<Option target="gtest"/>

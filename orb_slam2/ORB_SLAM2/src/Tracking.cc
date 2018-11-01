@@ -1176,8 +1176,7 @@ void Tracking::CreateNewKeyFrame()
     mpLocalMapper->SetNotStop(false);
 
     //获取当前所有的关键帧，并给点云模块插入关键帧
-    vector<KeyFrame*> vpKFs = mpMap->GetAllKeyFrames();
-    mpPointCloudMapping->InsertKeyFrame( pKF, mImRGB, mImDepth, pKF->mnFrameId ,vpKFs);
+    mpPointCloudMapping->InsertKeyFrame( pKF, mImRGB, mImDepth, pKF->mnFrameId);//这里传入vpKFs是用作回环检测时重建三维地图用
 
 
     mnLastKeyFrameId = mCurrentFrame.mnId;
