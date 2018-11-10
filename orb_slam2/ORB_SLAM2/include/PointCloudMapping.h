@@ -61,7 +61,6 @@ namespace ORB_SLAM2
     protected:
         PointCloud::Ptr GeneratePointCloud(KeyFrame *kf, cv::Mat &color, cv::Mat &depth);
 
-        shared_ptr<thread> mptCloudMapViewer;
         PointCloud::Ptr mpGlobalMap;
         bool mbShutDownFlag = false;
         mutex mMutexShutdown;

@@ -50,11 +50,13 @@ public:
 
 public:
 
-    LoopClosing(Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc, shared_ptr<PointCloudMapping> pPointCloudMapping, const bool bFixScale);
+    LoopClosing(Map* pMap, KeyFrameDatabase* pDB, ORBVocabulary* pVoc, const bool bFixScale);
 
     void SetTracker(Tracking* pTracker);
 
     void SetLocalMapper(LocalMapping* pLocalMapper);
+
+    void SetPointCloudMapper(PointCloudMapping* pPointCloudMapper);
 
     // Main function
     void Run();
@@ -111,6 +113,8 @@ protected:
 
     LocalMapping *mpLocalMapper;
 
+    PointCloudMapping *mpPointCloudMapper;
+
     std::list<KeyFrame*> mlpLoopKeyFrameQueue;
 
     std::mutex mMutexLoopQueue;
@@ -141,8 +145,6 @@ protected:
     // Fix scale in the stereo/RGB-D case
     bool mbFixScale;
     bool mnFullBAIdx;
-
-    shared_ptr<PointCloudMapping> mpPointCloudMapping;
 };
 
 } //namespace ORB_SLAM

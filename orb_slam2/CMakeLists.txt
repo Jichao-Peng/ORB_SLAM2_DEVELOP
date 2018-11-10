@@ -38,9 +38,11 @@ if(NOT OpenCV_FOUND)
     endif()
 endif()
 
+set(OpenCV_DIR  "/usr/local/share/OpenCV")
+
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
-find_package(catkin REQUIRED pcl_ros cv_bridge)
+find_package(catkin REQUIRED pcl_ros OpenCV)
 
 include_directories(
         ${PROJECT_SOURCE_DIR}

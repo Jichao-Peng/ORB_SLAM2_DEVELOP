@@ -18,7 +18,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/opencv"
   "../orb_slam2"
   "../orb_slam2/ORB_SLAM2/include"
   "/usr/include/eigen3"
@@ -28,6 +27,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/pcl-1.7"
   "/usr/include/ni"
   "/usr/include/vtk-5.8"
+  "/usr/local/include"
+  "/usr/local/include/opencv"
   )
 
 # Targets to which this target links.

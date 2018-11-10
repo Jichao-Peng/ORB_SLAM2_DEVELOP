@@ -62,6 +62,9 @@ public:
     };
 
 public:
+    // TODO：后期可以把这个封装成私有变量，统一对外接口
+    PointCloudMapping* mpPointCloudMapper;
+
 
     // Initialize the SLAM system. It launches the Local Mapping, Loop Closing and Viewer threads.
     System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor, const bool bUseViewer = true);
@@ -127,9 +130,6 @@ public:
     std::vector<MapPoint*> GetTrackedMapPoints();
     std::vector<cv::KeyPoint> GetTrackedKeyPointsUn();
 
-    //3D点云模块
-    shared_ptr<PointCloudMapping> mpPointCloudMapping;
-
 private:
 
     // Input sensor
@@ -167,6 +167,7 @@ private:
     std::thread* mptLocalMapping;
     std::thread* mptLoopClosing;
     std::thread* mptViewer;
+    std::thread* mptPointCloudMapping;
 
     // Reset flag
     std::mutex mMutexReset;

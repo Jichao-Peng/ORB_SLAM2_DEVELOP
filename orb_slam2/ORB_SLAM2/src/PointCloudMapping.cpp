@@ -7,7 +7,6 @@
 
 namespace ORB_SLAM2
 {
-
     PointCloudMapping::PointCloudMapping(double resolution, double meank, double thresh) :
             mResolution(resolution),
             mMeank(meank),
@@ -22,7 +21,6 @@ namespace ORB_SLAM2
 
         mpGlobalMap = boost::make_shared<PointCloud>();
         mpGlobalMap->header.frame_id = "camera_depth_frame";
-        mptCloudMapViewer = make_shared<thread>(bind(&PointCloudMapping::Run, this));
     }
 
     void PointCloudMapping::Shutdown()
@@ -32,7 +30,6 @@ namespace ORB_SLAM2
             mbShutDownFlag = true;
             mConKeyFrameUpdated.notify_one();
         }
-        mptCloudMapViewer->join();
     }
 
     void
@@ -147,11 +144,6 @@ namespace ORB_SLAM2
                     mGlobalMapSize = mpGlobalMap->size();
                     cout << "### The global map points' number (before filter) is " << mpGlobalMap->size();
 
-//                    std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
-//                    PointCloud::Ptr tmp1(new PointCloud());
-//                    mpStatisticalFilter->setInputCloud(mpGlobalMap);//删除离群点
-//                    mpStatisticalFilter->filter(*tmp1);
-//                    mpGlobalMap->swap(*tmp1);
                     std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
                     PointCloud::Ptr tmp2(new PointCloud());//voxel采样（加一个tmp是因为直接传mpGlobalMap会有问题）
                     mpVoxelFilter->setInputCloud(mpGlobalMap);

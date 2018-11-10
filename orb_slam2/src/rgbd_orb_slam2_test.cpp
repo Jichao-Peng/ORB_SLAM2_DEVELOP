@@ -106,7 +106,7 @@ int main(int argc, char **argv)//主函数入口
     // Save camera trajectory
     SLAM.SaveTrajectoryTUM("CameraTrajectory.txt");
     SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
-    SLAM.mpPointCloudMapping->Save();
+    SLAM.mpPointCloudMapper->Save();
     return 0;
 }
 

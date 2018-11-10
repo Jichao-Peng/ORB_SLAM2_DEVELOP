@@ -37,20 +37,18 @@ class PointCloudMapping;
 class MapDrawer
 {
 public:
-    MapDrawer(Map* pMap, shared_ptr<PointCloudMapping> pPointCloudMapping, const string &strSettingPath);
-
+    MapDrawer(Map* pMap, const string &strSettingPath);
     Map* mpMap;
-
     //点云地图
-    shared_ptr<PointCloudMapping> mpPointCloudMapping;
+    PointCloudMapping* mpPointCloudMapper;
 
     void DrawMapPoints();
+    void SetPointCloudMapper(PointCloudMapping* pPointCloudMapper);
     void DrawKeyFrames(const bool bDrawKF, const bool bDrawGraph);
     void DrawCurrentCamera(pangolin::OpenGlMatrix &Twc);
     void SetCurrentCameraPose(const cv::Mat &Tcw);
     void SetReferenceKeyFrame(KeyFrame *pKF);
     void GetCurrentOpenGLCameraMatrix(pangolin::OpenGlMatrix &M);
-
     void DrawPointCloudMap();
 
 private:

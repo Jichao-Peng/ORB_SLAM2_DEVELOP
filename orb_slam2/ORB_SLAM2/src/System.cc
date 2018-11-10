@@ -62,10 +62,9 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     float mMeank = fsSettings["PointCloudMapping.Meank"];
     float mThresh = fsSettings["PointCloudMapping.Thresh"];
 
-    //Load ORB Vocabulary
+    //ORB中vocabulary的作用是特征空间的划分和Bag-of-Words Vector的计算
     cout << endl << "Loading ORB Vocabulary. This could take a while..." << endl;
-
-    mpVocabulary = new ORBVocabulary();//ORB中vocabulary的作用是特征空间的划分和Bag-of-Words Vector的计算
+    mpVocabulary = new ORBVocabulary();
     bool bVocLoad = mpVocabulary->loadFromTextFile(strVocFile);
     if(!bVocLoad)
     {
@@ -75,34 +74,29 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
     }
     cout << "Vocabulary loaded!" << endl << endl;
 
-    //Create KeyFrame Database
+    //KeyFrameDatabase类的主要作用是在回环检测和重定位中，根据词袋模型的特征匹配度，找到闭环候选帧和重定位候选帧
     mpKeyFrameDatabase = new KeyFrameDatabase(*mpVocabulary);
 
-    //Create the Map
+    //Map类管理整个地图，因此其具有的属性是所有的地图点和关建针
     mpMap = new Map();
 
-    //点云拼接类
-    mpPointCloudMapping = make_shared<PointCloudMapping>(mResolution,mMeank,mThresh);
-
-    //Create Drawers. These are used by the Viewer
+    //mpFrameDrawer,mpMapDrawer类分别是显示帧和地图的类，会被Viewer类调用
     mpFrameDrawer = new FrameDrawer(mpMap);
-    mpMapDrawer = new MapDrawer(mpMap, mpPointCloudMapping ,strSettingsFile);
+    mpMapDrawer = new MapDrawer(mpMap, strSettingsFile);
 
-    //Initialize the Tracking thread
-    //(it will live in the main thread of execution, the one that called this constructor)
-
+    //【第一个线程】Tracking类，就是在主线程里面跑
     mpTracker = new Tracking(this, mpVocabulary, mpFrameDrawer, mpMapDrawer,
-                             mpMap, mpKeyFrameDatabase, mpPointCloudMapping, strSettingsFile, mSensor);
+                             mpMap, mpKeyFrameDatabase, strSettingsFile, mSensor);
 
-    //Initialize the Local Mapping thread and launch
+    //【第二个线程】LocalMapping类，进行局部地图构建
     mpLocalMapper = new LocalMapping(mpMap, mSensor==MONOCULAR);
     mptLocalMapping = new thread(&ORB_SLAM2::LocalMapping::Run,mpLocalMapper);
 
-    //Initialize the Loop Closing thread and launch
-    mpLoopCloser = new LoopClosing(mpMap, mpKeyFrameDatabase, mpVocabulary, mpPointCloudMapping, mSensor!=MONOCULAR);
+    //【第三个线程】LoopCLusing类，进行回环检测
+    mpLoopCloser = new LoopClosing(mpMap, mpKeyFrameDatabase, mpVocabulary, mSensor!=MONOCULAR);
     mptLoopClosing = new thread(&ORB_SLAM2::LoopClosing::Run, mpLoopCloser);
 
-    //Initialize the Viewer thread and launch
+    //【第四个线程】Viewer类，进行结果显示，可关闭
     if(bUseViewer)
     {
         mpViewer = new Viewer(this, mpFrameDrawer,mpMapDrawer,mpTracker,strSettingsFile);
@@ -110,7 +104,17 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
         mpTracker->SetViewer(mpViewer);
     }
 
-    //Set pointers between threads //线程之间相互设计指针
+
+    // 【第五个线程】mpPointCloudMapping类，完成点云拼接
+    mpPointCloudMapper = new PointCloudMapping(mResolution,mMeank,mThresh);
+    mptPointCloudMapping = new thread(&ORB_SLAM2::PointCloudMapping::Run,mpPointCloudMapper);
+
+    //线程之间相互设计指针,我感觉其实就是为了方便调用和传递数据
+    //一个类构建出来，有些函数是给自己用的，有些是给其他类用的，但是每个类的线程的主函数好像都是某一个类的Run
+    mpMapDrawer->SetPointCloudMapper(mpPointCloudMapper);
+    mpTracker->SetPointCloudMapper(mpPointCloudMapper);
+    mpLoopCloser->SetPointCloudMapper(mpPointCloudMapper);
+
     mpTracker->SetLocalMapper(mpLocalMapper);
     mpTracker->SetLoopClosing(mpLoopCloser);
 
@@ -310,7 +314,7 @@ void System::Shutdown()
 {
     mpLocalMapper->RequestFinish();
     mpLoopCloser->RequestFinish();
-    mpPointCloudMapping->Shutdown();
+    mpPointCloudMapper->Shutdown();
 //    if(mpViewer)
 //    {
 //        mpViewer->RequestFinish();

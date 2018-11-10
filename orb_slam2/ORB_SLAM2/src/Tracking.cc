@@ -49,10 +49,10 @@ using namespace std;
 namespace ORB_SLAM2
 {
 
-Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, shared_ptr<PointCloudMapping> pPointCloudMapping, const string &strSettingPath, const int sensor):
+Tracking::Tracking(System *pSys, ORBVocabulary* pVoc, FrameDrawer *pFrameDrawer, MapDrawer *pMapDrawer, Map *pMap, KeyFrameDatabase* pKFDB, const string &strSettingPath, const int sensor):
     mState(NO_IMAGES_YET), mSensor(sensor), mbOnlyTracking(false), mbVO(false), mpORBVocabulary(pVoc),
     mpKeyFrameDB(pKFDB), mpInitializer(static_cast<Initializer*>(NULL)), mpSystem(pSys), mpViewer(NULL),
-    mpFrameDrawer(pFrameDrawer), mpMapDrawer(pMapDrawer), mpMap(pMap), mnLastRelocFrameId(0), mpPointCloudMapping( pPointCloudMapping )
+    mpFrameDrawer(pFrameDrawer), mpMapDrawer(pMapDrawer), mpMap(pMap), mnLastRelocFrameId(0)
 {
     // Load camera parameters from settings file //读入相机参数
 
@@ -162,7 +162,7 @@ void Tracking::SetLocalMapper(LocalMapping *pLocalMapper)
 
 void Tracking::SetLoopClosing(LoopClosing *pLoopClosing)
 {
-    mpLoopClosing=pLoopClosing;
+    mpLoopCloser=pLoopClosing;
 }
 
 void Tracking::SetViewer(Viewer *pViewer)
@@ -170,8 +170,12 @@ void Tracking::SetViewer(Viewer *pViewer)
     mpViewer=pViewer;
 }
 
+void Tracking::SetPointCloudMapper(PointCloudMapping *pPointCloudMapper)
+{
+    mpPointCloudMapper = pPointCloudMapper;
+}
 
-cv::Mat Tracking::GrabImageStereo(const cv::Mat &imRectLeft, const cv::Mat &imRectRight, const double &timestamp)
+    cv::Mat Tracking::GrabImageStereo(const cv::Mat &imRectLeft, const cv::Mat &imRectRight, const double &timestamp)
 {
     mImGray = imRectLeft;
     cv::Mat imGrayRight = imRectRight;
@@ -1176,7 +1180,7 @@ void Tracking::CreateNewKeyFrame()
     mpLocalMapper->SetNotStop(false);
 
     //获取当前所有的关键帧，并给点云模块插入关键帧
-    mpPointCloudMapping->InsertKeyFrame( pKF, mImRGB, mImDepth, pKF->mnFrameId);//这里传入vpKFs是用作回环检测时重建三维地图用
+    mpPointCloudMapper->InsertKeyFrame( pKF, mImRGB, mImDepth, pKF->mnFrameId);//这里传入vpKFs是用作回环检测时重建三维地图用
 
 
     mnLastKeyFrameId = mCurrentFrame.mnId;
@@ -1569,7 +1573,7 @@ void Tracking::Reset()
 
     // Reset Loop Closing
     cout << "Reseting Loop Closing...";
-    mpLoopClosing->RequestReset();
+    mpLoopCloser->RequestReset();
     cout << " done" << endl;
 
     // Clear BoW Database

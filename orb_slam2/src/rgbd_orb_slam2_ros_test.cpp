@@ -140,7 +140,7 @@ int main(int argc, char **argv)
         cout<<"ROS running..."<<endl;
 
         pcl::PointCloud<pcl::PointXYZRGBA>::Ptr global_map(new pcl::PointCloud<pcl::PointXYZRGBA>);
-        global_map = mpSLAMSystem->mpSLAM->mpPointCloudMapping->GetGlobalMap();
+        global_map = mpSLAMSystem->mpSLAM->mpPointCloudMapper->GetGlobalMap();
 
         pcl::PointCloud<pcl::PointXYZRGB>::Ptr global_map_copy(new pcl::PointCloud<pcl::PointXYZRGB>);
         pcl::copyPointCloud(*global_map, *global_map_copy);

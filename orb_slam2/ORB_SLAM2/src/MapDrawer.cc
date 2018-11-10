@@ -28,7 +28,7 @@ namespace ORB_SLAM2
 {
 
 
-MapDrawer::MapDrawer(Map* pMap, shared_ptr<PointCloudMapping> pPointCloudMapping, const string &strSettingPath):mpMap(pMap),mpPointCloudMapping(pPointCloudMapping)
+MapDrawer::MapDrawer(Map* pMap, const string &strSettingPath):mpMap(pMap)
 {
     cv::FileStorage fSettings(strSettingPath, cv::FileStorage::READ);
 
@@ -38,13 +38,18 @@ MapDrawer::MapDrawer(Map* pMap, shared_ptr<PointCloudMapping> pPointCloudMapping
     mPointSize = fSettings["Viewer.PointSize"];
     mCameraSize = fSettings["Viewer.CameraSize"];
     mCameraLineWidth = fSettings["Viewer.CameraLineWidth"];
-
 }
+
+void MapDrawer::SetPointCloudMapper(PointCloudMapping *pPointCloudMapper)
+{
+    mpPointCloudMapper = pPointCloudMapper;
+}
+
 
 void MapDrawer::DrawPointCloudMap()
 {
     PointCloudMapping::PointCloud::Ptr pGlobalMap(new PointCloudMapping::PointCloud);
-    pGlobalMap = mpPointCloudMapping->GetGlobalMap();
+    pGlobalMap = mpPointCloudMapper->GetGlobalMap();
 
     glPointSize(mPointSize);
     glBegin(GL_POINTS);

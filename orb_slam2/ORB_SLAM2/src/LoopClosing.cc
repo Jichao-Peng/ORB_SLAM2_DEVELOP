@@ -35,9 +35,9 @@
 namespace ORB_SLAM2
 {
 
-LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, shared_ptr<PointCloudMapping> pPointCloudMapping, const bool bFixScale):
+LoopClosing::LoopClosing(Map *pMap, KeyFrameDatabase *pDB, ORBVocabulary *pVoc, const bool bFixScale):
     mbResetRequested(false), mbFinishRequested(false), mbFinished(true), mpMap(pMap),
-    mpKeyFrameDB(pDB) ,mpORBVocabulary(pVoc), mpPointCloudMapping(pPointCloudMapping), mpMatchedKF(NULL), mLastLoopKFid(0), mbRunningGBA(false), mbFinishedGBA(true),
+    mpKeyFrameDB(pDB) ,mpORBVocabulary(pVoc), mpMatchedKF(NULL), mLastLoopKFid(0), mbRunningGBA(false), mbFinishedGBA(true),
     mbStopGBA(false), mpThreadGBA(NULL), mbFixScale(bFixScale), mnFullBAIdx(0)
 {
     mnCovisibilityConsistencyTh = 3;
@@ -51,6 +51,11 @@ void LoopClosing::SetTracker(Tracking *pTracker)
 void LoopClosing::SetLocalMapper(LocalMapping *pLocalMapper)
 {
     mpLocalMapper=pLocalMapper;
+}
+
+void LoopClosing::SetPointCloudMapper(PointCloudMapping *pPointCloudMapper)
+{
+    mpPointCloudMapper=pPointCloudMapper;
 }
 
 
@@ -742,7 +747,7 @@ void LoopClosing::RunGlobalBundleAdjustment(unsigned long nLoopKF)
 
             mpLocalMapper->Release();
 
-            mpPointCloudMapping->UpdateCloud(mpMap->GetAllKeyFrames());//在此处进行点云全局跟新
+            mpPointCloudMapper->UpdateCloud(mpMap->GetAllKeyFrames());//在此处进行点云全局跟新
 
             cout << "Map updated!" << endl;
         }

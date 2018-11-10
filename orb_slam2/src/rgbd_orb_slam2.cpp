@@ -22,7 +22,7 @@ void SLAMSystem::Run()
     while (ros::ok())
     {
         pcl::PointCloud<pcl::PointXYZRGBA>::Ptr global_map(new pcl::PointCloud<pcl::PointXYZRGBA>);
-        global_map = mpSLAM->mpPointCloudMapping->GetGlobalMap();
+        global_map = mpSLAM->mpPointCloudMapper->GetGlobalMap();
 
         pcl::PointCloud<pcl::PointXYZRGB>::Ptr global_map_copy(new pcl::PointCloud<pcl::PointXYZRGB>);
         pcl::copyPointCloud(*global_map, *global_map_copy);
