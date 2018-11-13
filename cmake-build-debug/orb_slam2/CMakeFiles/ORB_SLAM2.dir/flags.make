@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -O3 -Wno-deprecated -std=c++11 -g -fPIC
 
 CXX_DEFINES = -DCOMPILEDWITHC11 -DORB_SLAM2_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ORB_SLAM2\"
 
-CXX_INCLUDES = -I/home/leo/Desktop/orb_slam2_project/src/orb_slam2 -I/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/include -isystem /usr/include/eigen3 -isystem /home/leo/Downloads/Pangolin/include -isystem /home/leo/Downloads/Pangolin/build/src/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/ni -I/usr/include/vtk-5.8 -isystem /usr/local/include -isystem /usr/local/include/opencv 
+CXX_INCLUDES = -I/home/leo/Desktop/orb_slam2_project/src/orb_slam2 -I/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/include -isystem /usr/include/eigen3 -isystem /home/leo/Downloads/Pangolin/include -isystem /home/leo/Downloads/Pangolin/build/src/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/ni -I/usr/include/vtk-5.8 -isystem /usr/local/include -isystem /usr/local/include/opencv -I/opt/ros/indigo/include/cv_bridge 
 

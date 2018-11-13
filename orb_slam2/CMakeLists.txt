@@ -38,11 +38,10 @@ if(NOT OpenCV_FOUND)
     endif()
 endif()
 
-set(OpenCV_DIR  "/usr/local/share/OpenCV")
 
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
-find_package(catkin REQUIRED pcl_ros OpenCV)
+find_package(catkin REQUIRED pcl_ros)
 
 include_directories(
         ${PROJECT_SOURCE_DIR}
@@ -50,6 +49,8 @@ include_directories(
         ${EIGEN3_INCLUDE_DIR}
         ${Pangolin_INCLUDE_DIRS}
         ${catkin_INCLUDE_DIRS}
+        ${OpenCV_INCLUDE_DIRS}
+        /opt/ros/indigo/include/cv_bridge
 )
 
 add_library(${PROJECT_NAME} SHARED
@@ -82,6 +83,7 @@ target_link_libraries(${PROJECT_NAME}
         ${PROJECT_SOURCE_DIR}/ORB_SLAM2/Thirdparty/DBoW2/lib/libDBoW2.so
         ${PROJECT_SOURCE_DIR}/ORB_SLAM2/Thirdparty/g2o/lib/libg2o.so
         ${catkin_LIBRARIES}
+        /opt/ros/indigo/lib/libcv_bridge.so
         )
 
 #add_executable(rgbd_orb_slam2_ros_test

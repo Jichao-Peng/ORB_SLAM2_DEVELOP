@@ -369,6 +369,7 @@
 					<Add directory="/usr/include/vtk-5.8"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/opt/ros/indigo/include/cv_bridge"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -406,6 +407,7 @@
 					<Add directory="/usr/include/vtk-5.8"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/opt/ros/indigo/include/cv_bridge"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -563,6 +565,7 @@
 					<Add directory="/usr/include/vtk-5.8"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/opt/ros/indigo/include/cv_bridge"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -600,6 +603,7 @@
 					<Add directory="/usr/include/vtk-5.8"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/opt/ros/indigo/include/cv_bridge"/>
 					<Add directory="/usr/include/c++/4.9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
 					<Add directory="/usr/include/c++/4.9/backward"/>
@@ -712,22 +716,10 @@
 		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
-		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
-		</Unit>
-		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
-		</Unit>
 		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
 		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
-		</Unit>
-		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
-		</Unit>
-		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\share\OpenCV\"/>
 		</Unit>
 		<Unit filename="/home/leo/Desktop/orb_slam2_project/src/../../../../../usr/src/gtest/CMakeLists.txt">

@@ -25,7 +25,7 @@ Camera.fps: 30.0
 Camera.bf: 40.0
 
 # Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
-Camera.RGB: 0
+Camera.RGB: 1
 
 # Close/Far threshold. Baseline times.
 ThDepth: 40.0
@@ -67,6 +67,6 @@ Viewer.ViewpointY: -0.7
 Viewer.ViewpointZ: -1.8
 Viewer.ViewpointF: 500
 
-PointCloudMapping.Resolution:2
-PointCloudMapping.Meank: 50
-PointCloudMapping.Thresh: 2.0
+PointCloudMapping.Resolution: 10.0
+PointCloudMapping.Meank: 50.0 #每个点的临近点的个数
+PointCloudMapping.Thresh: 15.0 #距离阈值

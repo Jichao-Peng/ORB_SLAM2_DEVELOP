@@ -21,8 +21,8 @@ int main(int argc, char **argv)//主函数入口
 {
     string argv1 = "/home/leo/Desktop/orb_slam2_project/src/orb_slam2/ORB_SLAM2/Vocabulary/ORBvoc.txt";
     string argv2 = "/home/leo/Desktop/orb_slam2_project/src/orb_slam2/src/TUM1.yaml";
-    string argv3 = "/home/leo/Desktop/Data/rgbd_dataset_freiburg1_360_secret";
-    string argv4 = "/home/leo/Desktop/Data/rgbd_dataset_freiburg1_360_secret/associations.txt";
+    string argv3 = "/home/leo/Desktop/Data/rgbd_dataset_freiburg2_large_with_loop";
+    string argv4 = "/home/leo/Desktop/Data/rgbd_dataset_freiburg2_large_with_loop/associations.txt";
 
     // Retrieve paths to images
     vector<string> vstrImageFilenamesRGB;
@@ -89,8 +89,6 @@ int main(int argc, char **argv)//主函数入口
 
     // Stop all threads
     SLAM.Shutdown();//关闭所有线程
-
-    while(1){}
 
     // Tracking time statistics
     sort(vTimesTrack.begin(),vTimesTrack.end());

@@ -33,7 +33,7 @@ void SLAMSystem::Run()
         global_map_output.header.stamp = ros::Time::now();
         cloud_pub.publish(global_map_output);
 
-        ros::Rate rate(2);
+        ros::Rate rate(10);
         rate.sleep();
         ros::spinOnce();
     }

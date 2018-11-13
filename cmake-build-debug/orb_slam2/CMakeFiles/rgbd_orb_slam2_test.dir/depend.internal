@@ -370,6 +370,10 @@ orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/src/rgbd_orb_slam2_test.cpp.o
  /usr/include/pcl-1.7/pcl/kdtree/impl/kdtree_flann.hpp
  /usr/include/pcl-1.7/pcl/kdtree/kdtree.h
  /usr/include/pcl-1.7/pcl/kdtree/kdtree_flann.h
+ /usr/include/pcl-1.7/pcl/keypoints/impl/keypoint.hpp
+ /usr/include/pcl-1.7/pcl/keypoints/impl/uniform_sampling.hpp
+ /usr/include/pcl-1.7/pcl/keypoints/keypoint.h
+ /usr/include/pcl-1.7/pcl/keypoints/uniform_sampling.h
  /usr/include/pcl-1.7/pcl/octree/impl/octree_pointcloud.hpp
  /usr/include/pcl-1.7/pcl/octree/impl/octree_search.hpp
  /usr/include/pcl-1.7/pcl/octree/octree_base.h

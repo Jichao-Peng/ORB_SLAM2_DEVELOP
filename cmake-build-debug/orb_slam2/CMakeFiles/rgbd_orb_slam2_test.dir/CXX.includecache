@@ -479,6 +479,8 @@ pcl/filters/statistical_outlier_removal.h
 -
 pcl/visualization/cloud_viewer.h
 -
+pcl/keypoints/uniform_sampling.h
+-
 System.h
 ../orb_slam2/ORB_SLAM2/include/System.h
 
@@ -2828,6 +2830,36 @@ pcl/kdtree/kdtree.h
 pcl/kdtree/flann.h
 -
 pcl/kdtree/impl/kdtree_flann.hpp
+-
+
+/usr/include/pcl-1.7/pcl/keypoints/impl/keypoint.hpp
+
+/usr/include/pcl-1.7/pcl/keypoints/impl/uniform_sampling.hpp
+pcl/common/common.h
+-
+pcl/keypoints/uniform_sampling.h
+-
+
+/usr/include/pcl-1.7/pcl/keypoints/keypoint.h
+pcl/pcl_base.h
+-
+boost/function.hpp
+-
+boost/bind.hpp
+-
+pcl/search/pcl_search.h
+-
+pcl/pcl_config.h
+-
+pcl/keypoints/impl/keypoint.hpp
+-
+
+/usr/include/pcl-1.7/pcl/keypoints/uniform_sampling.h
+pcl/keypoints/keypoint.h
+-
+boost/unordered_map.hpp
+-
+pcl/keypoints/impl/uniform_sampling.hpp
 -
 
 /usr/include/pcl-1.7/pcl/octree/impl/octree_pointcloud.hpp

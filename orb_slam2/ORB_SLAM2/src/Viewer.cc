@@ -130,8 +130,8 @@ void Viewer::Run()
         if(menuShowKeyFrames || menuShowGraph)
             mpMapDrawer->DrawKeyFrames(menuShowKeyFrames,menuShowGraph);
         if(menuShowPoints)
-            //mpMapDrawer->DrawMapPoints();
-            mpMapDrawer->DrawPointCloudMap();
+            //mpMapDrawer->DrawMapPoints();//画稀疏地图
+            mpMapDrawer->DrawPointCloudMap();//画稠密地图
 
         pangolin::FinishFrame();
 

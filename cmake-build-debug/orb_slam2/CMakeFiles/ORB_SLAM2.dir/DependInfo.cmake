@@ -48,6 +48,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
   "/usr/local/include"
   "/usr/local/include/opencv"
+  "/opt/ros/indigo/include/cv_bridge"
   )
 
 # Targets to which this target links.

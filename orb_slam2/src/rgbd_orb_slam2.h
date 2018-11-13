@@ -41,6 +41,7 @@ private:
     message_filters::Synchronizer<sync_pol> synchronizer;
     ros::Publisher cloud_pub;
     ORB_SLAM2::System* mpSLAM;
+
 };
 
 

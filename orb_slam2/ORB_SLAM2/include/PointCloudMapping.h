@@ -14,6 +14,7 @@
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/statistical_outlier_removal.h>
 #include <pcl/visualization/cloud_viewer.h>
+#include <pcl/keypoints/uniform_sampling.h>
 
 #include "System.h"
 
@@ -41,9 +42,9 @@ namespace ORB_SLAM2
 
         PointCloudMapping(double resolution, double meank, double thresh);
 
-        void InsertKeyFrame(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id);
+        void InsertKeyCloudPoint(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id);
 
-        void Shutdown();
+        void RequestFinish();
 
         void Run();
 
@@ -53,9 +54,7 @@ namespace ORB_SLAM2
 
         PointCloud::Ptr GetGlobalMap();
 
-        bool mbPointCloudDealBusy;
         bool mbLoopBusy = false;
-        bool mbStop = false;
 
 
     protected:
@@ -64,15 +63,12 @@ namespace ORB_SLAM2
         PointCloud::Ptr mpGlobalMap;
         bool mbShutDownFlag = false;
         mutex mMutexShutdown;
-        mutex mMutexKeyFrameDeal;
-        mutex mMutexKeyFrameUpdate;
+        mutex mMutexKeyPointCloudDeal;
         mutex mMutexGlobalMapDeal;
-        condition_variable mConKeyFrameUpdated;
+        mutex mMutexKeyPointCloudUpdated;
+        condition_variable mConKeyPointCloudUpdated;
 
         vector<KeyPointCloud *> mvpKeyPointClouds;
-        vector<KeyFrame *> mvpKeyFrames;
-
-        unsigned short musLastKeyFrameSize = 0;
 
         double mResolution = 0.1;
         double mMeank = 50;
@@ -80,7 +76,10 @@ namespace ORB_SLAM2
 
         pcl::StatisticalOutlierRemoval<PointT> *mpStatisticalFilter;
         pcl::VoxelGrid<PointT> *mpVoxelFilter;
+        pcl::UniformSampling<PointT> *mpUniformFilter;
 
+        int mLastKeyPointCloudSize = 0;
+        int mKeyPointCloudSize = 0;
         int mGlobalMapSize = 0;
     };
 

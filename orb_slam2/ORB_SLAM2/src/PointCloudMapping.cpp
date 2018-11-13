@@ -19,38 +19,43 @@ namespace ORB_SLAM2
         mpVoxelFilter = new pcl::VoxelGrid<PointT>();
         mpVoxelFilter->setLeafSize(mResolution, mResolution, mResolution);
 
+        mpUniformFilter = new pcl::UniformSampling<PointT>();
+        mpUniformFilter->setRadiusSearch(mResolution);
+
+
         mpGlobalMap = boost::make_shared<PointCloud>();
         mpGlobalMap->header.frame_id = "camera_depth_frame";
     }
 
-    void PointCloudMapping::Shutdown()
+    void PointCloudMapping::RequestFinish()
     {
         {
-            unique_lock<mutex> lock(mMutexShutdown);
+            unique_lock<mutex> lock(mMutexShutdown);//【锁】
             mbShutDownFlag = true;
-            mConKeyFrameUpdated.notify_one();
+            mConKeyPointCloudUpdated.notify_one();
         }
     }
 
-    void
-    PointCloudMapping::InsertKeyFrame(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id)
+    //InsertKeyFrame是放在Tracking线程中的，因此我感觉不能够在这里阻碍Tracking线程的进行
+    //TODO:这一部分可以开一个临时线程，不占用Tracking的线程资源
+    void PointCloudMapping::InsertKeyCloudPoint(KeyFrame *pKF, cv::Mat &color, cv::Mat &depth, int id)
     {
-        {
-            unique_lock<mutex> lock(mMutexKeyFrameDeal);
-            unique_lock<mutex> lock2(mMutexGlobalMapDeal);//这个锁是防止在建立全局点云地图的时候，这里在生成新的点云地图，占用计算资源太大
+        unique_lock<mutex> lock(mMutexKeyPointCloudDeal);//【锁】
+        std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
+        KeyPointCloud *pKPC = new KeyPointCloud;
+        pKPC->mnID = id;
+        pKPC->mT = ORB_SLAM2::Converter::toSE3Quat(pKF->GetPose());
+        pKPC->mpPointCloud = GeneratePointCloud(pKF, color, depth);//生成点云也是在Tracking线程中进行的
 
-            cout << "Pointcloud map receive a keyframe, id = " << id << endl;
+        mvpKeyPointClouds.push_back(pKPC);//将关键帧转变成关键点云
 
-            mvpKeyFrames.push_back(pKF);//mvpKeyFrames用来构建点云
-            KeyPointCloud *pKPC = new KeyPointCloud;
-            pKPC->mnID = id;
-            pKPC->mT = ORB_SLAM2::Converter::toSE3Quat(pKF->GetPose());
-            pKPC->mpPointCloud = GeneratePointCloud(pKF, color, depth);
+        std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+        double Time= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();
 
-            mvpKeyPointClouds.push_back(pKPC);//将关键帧转变成关键点云
+        cout << "[POINTCLOUDMAP] pointcloud map receive a keyframe, id = " << id <<", and the insert time is "<<Time<< endl;
 
-            mConKeyFrameUpdated.notify_one();
-        }
+        mKeyPointCloudSize++;
+        mConKeyPointCloudUpdated.notify_one();
     }
 
     pcl::PointCloud<pcl::PointXYZRGBA>::Ptr PointCloudMapping::GeneratePointCloud(KeyFrame *pKf, cv::Mat &color,
@@ -76,15 +81,18 @@ namespace ORB_SLAM2
                 pPointCloud->points.push_back(p);
             }
         }
-        PointCloud::Ptr tmp1(new PointCloud());
-        mpStatisticalFilter->setInputCloud(pPointCloud);//删除离群点
-        mpStatisticalFilter->filter(*tmp1);
-        pPointCloud->swap(*tmp1);
 
-        PointCloud::Ptr tmp2(new PointCloud());//voxel采样（加一个tmp是因为直接传mpGlobalMap会有问题）
-        mpVoxelFilter->setInputCloud(pPointCloud);
-        mpVoxelFilter->filter(*tmp2);
+        PointCloud::Ptr tmp1(new PointCloud());
+        mpUniformFilter->setInputCloud(pPointCloud);
+        pcl::PointCloud<int> KeyPointIndices;
+        mpUniformFilter->compute(KeyPointIndices);
+        pcl::copyPointCloud(*pPointCloud, KeyPointIndices.points, *tmp1);
+
+        PointCloud::Ptr tmp2(new PointCloud());
+        mpStatisticalFilter->setInputCloud(tmp1);//删除离群点
+        mpStatisticalFilter->filter(*tmp2);
         pPointCloud->swap(*tmp2);
+
         return pPointCloud;
     }
 
@@ -103,63 +111,60 @@ namespace ORB_SLAM2
             }
 
             {
-                unique_lock<mutex> lock(mMutexKeyFrameUpdate);
-                mConKeyFrameUpdated.wait(lock);//没有插入关键帧则阻塞线程
+                unique_lock<mutex> lock(mMutexKeyPointCloudUpdated);
+                mConKeyPointCloudUpdated.wait(lock);//没有插入关键帧则阻塞线程
+                cout<<"flag1"<<endl;
             }
 
-            size_t N = 0;
-            {
-                unique_lock<mutex> lock(mMutexKeyFrameDeal);
-                N = mvpKeyFrames.size();//判断当前关键帧队列有多长
-                cout<<"The size of keyframe is "<<N<<endl;
-            }
-
-            if (mbLoopBusy || mbStop)//如果此时正在进行循环或者停止则跳过此循环，不进行点云生成
+            if (mbLoopBusy)//如果此时正在进行循环或者停止则跳过此循环，不进行全局地图的添加,这就是为什么闭环的时候地图停止更新了
             {
                 cout<<"The loop is busy or stopped"<<endl;
                 continue;
             }
 
-            if (musLastKeyFrameSize == N)//最后一帧已经处理
+            if (mLastKeyPointCloudSize == mKeyPointCloudSize)//最后一帧已经处理
             {
                 cout<<"The frame is the last frame"<<endl;
-                mbPointCloudDealBusy = false;
                 continue;
             }
 
-            mbPointCloudDealBusy = true;
-
+            for (size_t i = mLastKeyPointCloudSize; i < mKeyPointCloudSize; i++)
             {
-                unique_lock<mutex> lock(mMutexGlobalMapDeal);
-                for (size_t i = musLastKeyFrameSize; i < N; i++)
-                {
-                    PointCloud::Ptr pPointCloud(new PointCloud);
-                    pcl::transformPointCloud(*(mvpKeyPointClouds[i]->mpPointCloud), *pPointCloud,
-                                             mvpKeyPointClouds[i]->mT.inverse().matrix());
-                    *mpGlobalMap += *pPointCloud;
-                }
-
-                if(mpGlobalMap->size()-mGlobalMapSize > 5000)
-                {
-                    mGlobalMapSize = mpGlobalMap->size();
-                    cout << "### The global map points' number (before filter) is " << mpGlobalMap->size();
-
-                    std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
-                    PointCloud::Ptr tmp2(new PointCloud());//voxel采样（加一个tmp是因为直接传mpGlobalMap会有问题）
-                    mpVoxelFilter->setInputCloud(mpGlobalMap);
-                    mpVoxelFilter->filter(*tmp2);
-                    mpGlobalMap->swap(*tmp2);
-                    std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
-
-//                    double SF_Time= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();//记录时间
-                    double SF_Time = 0;
-                    double VF_Time= std::chrono::duration_cast<std::chrono::duration<double> >(t3 - t2).count();//记录时间
-                    cout << "    The global map points' number (after filter) is " << mpGlobalMap->size() <<"   The SF_Time is "<<SF_Time<<"   The VF_Time is "<<VF_Time<<endl;
-                }
+                unique_lock<mutex> lock(mMutexKeyPointCloudDeal);//【锁】
+                unique_lock<mutex> lock2(mMutexGlobalMapDeal);//【锁】
+                PointCloud::Ptr pPointCloud(new PointCloud);
+                PointCloud::Ptr pGlobalPointCloud(new PointCloud);
+                cout<<"flag2"<<endl;
+                pcl::transformPointCloud(*(mvpKeyPointClouds[i]->mpPointCloud), *pPointCloud,
+                                     mvpKeyPointClouds[i]->mT.inverse().matrix());
+                cout<<"flag3"<<endl;
+                *pGlobalPointCloud = *mpGlobalMap + *pPointCloud;
+                mpGlobalMap->swap(*pGlobalPointCloud);
+                cout<<"flag4"<<endl;
             }
+            if(mpGlobalMap->size()-mGlobalMapSize > 5000)
+            {
+                cout<<"flag5"<<endl;
+                unique_lock<mutex> lock(mMutexKeyPointCloudDeal);//【锁】
+                unique_lock<mutex> lock2(mMutexGlobalMapDeal);//【锁】
 
-            musLastKeyFrameSize = N;
-            mbPointCloudDealBusy = false;
+                mGlobalMapSize = mpGlobalMap->size();
+                cout << "[POINTCLOUDMAP] the global map points' number (before filter) is " << mpGlobalMap->size();
+                std::chrono::steady_clock::time_point t2 = std::chrono::steady_clock::now();
+                PointCloud::Ptr tmp1(new PointCloud());
+                mpUniformFilter->setInputCloud(mpGlobalMap);
+                pcl::PointCloud<int> KeyPointIndices;
+                mpUniformFilter->compute(KeyPointIndices);
+                pcl::copyPointCloud(*mpGlobalMap, KeyPointIndices.points, *tmp1);
+                mpGlobalMap->swap(*tmp1);
+                std::chrono::steady_clock::time_point t3 = std::chrono::steady_clock::now();
+//                    double SF_Time= std::chrono::duration_cast<std::chrono::duration<double> >(t2 - t1).count();//记录时间
+                double SF_Time = 0;
+                double VF_Time= std::chrono::duration_cast<std::chrono::duration<double> >(t3 - t2).count();//记录时间
+                cout << "    the global map points' number (after filter) is " << mpGlobalMap->size() <<"   The SF_Time is "<<SF_Time<<"   The VF_Time is "<<VF_Time<<endl;
+            }
+            cout<<"flag6"<<endl;
+            mLastKeyPointCloudSize = mKeyPointCloudSize;
         }
     }
 
@@ -175,45 +180,45 @@ namespace ORB_SLAM2
         cout << endl << "global map saved!" << endl;
     }
 
+    //UpdateCloud是放在LoopClosing线程里跑的
     void PointCloudMapping::UpdateCloud(vector<KeyFrame*> vpKFs)
     {
-        if (!mbPointCloudDealBusy)
+        unique_lock<mutex> lock(mMutexKeyPointCloudDeal);//【锁】
+        unique_lock<mutex> lock2(mMutexGlobalMapDeal);//【锁】
+        mbLoopBusy = true;
+        cout << "Start close looping cloud point" << endl;
+        PointCloud::Ptr pPointCloudGlobal(new PointCloud);
+        for (int i = 0; i < vpKFs.size(); i++)//这个更新规则其实很蠢，就是查询与关键点云对应的关键帧，然后根据关键帧的位置更新关键点云
         {
-            mbLoopBusy = true;
-            cout << "Start close looping cloud point" << endl;
-            PointCloud::Ptr pPointCloudGlobal(new PointCloud);
-            for (int i = 0; i < vpKFs.size(); i++)//这个更新规则其实很蠢，就是查询与关键点云对应的关键帧，然后根据关键帧的位置更新关键点云
+            for (int j = 0; j < mvpKeyPointClouds.size(); j++)
             {
-                for (int j = 0; j < mvpKeyPointClouds.size(); j++)
+                if (mvpKeyPointClouds[j]->mnID == vpKFs[i]->mnFrameId)
                 {
-                    if (mvpKeyPointClouds[j]->mnID == vpKFs[i]->mnFrameId)
-                    {
-                        cout<< "There is one key point cloud, the ID is "<<mvpKeyPointClouds[j]->mnID<<endl;
-                        Eigen::Isometry3d T = ORB_SLAM2::Converter::toSE3Quat(vpKFs[i]->GetPose());
-                        cout<< "The origin T is "<<endl<<mvpKeyPointClouds[j]->mT.inverse().matrix()<<endl<<"The corrected T is "<<endl<<T.inverse().matrix()<<endl<<endl;
-                        PointCloud::Ptr pPointCloud(new PointCloud);
-                        pcl::transformPointCloud(*mvpKeyPointClouds[j]->mpPointCloud, *pPointCloud,
-                                                 T.inverse().matrix());
-                        *pPointCloudGlobal += *pPointCloud;
-                        continue;
-                    }
+                    cout<< "There is one key point cloud, the ID is "<<mvpKeyPointClouds[j]->mnID<<endl;
+                    Eigen::Isometry3d T = ORB_SLAM2::Converter::toSE3Quat(vpKFs[i]->GetPose());
+                    cout<< "The origin T is "<<endl<<mvpKeyPointClouds[j]->mT.inverse().matrix()<<endl<<"The corrected T is "<<endl<<T.inverse().matrix()<<endl<<endl;
+                    PointCloud::Ptr pPointCloud(new PointCloud);
+                    pcl::transformPointCloud(*mvpKeyPointClouds[j]->mpPointCloud, *pPointCloud,
+                                             T.inverse().matrix());
+                    *pPointCloudGlobal += *pPointCloud;
+                    continue;
                 }
             }
-            cout << "Finish close looping cloud point" << endl;
-            {
-                unique_lock<mutex> lock(mMutexGlobalMapDeal);
-                PointCloud::Ptr tmp1(new PointCloud());
-                mpStatisticalFilter->setInputCloud(pPointCloudGlobal);//删除离群点
-                mpStatisticalFilter->filter(*tmp1);
-                mpGlobalMap->swap(*tmp1);
-
-                PointCloud::Ptr tmp2(new PointCloud());//voxel采样（加一个tmp是因为直接传mpGlobalMap会有问题）
-                mpVoxelFilter->setInputCloud(mpGlobalMap);
-                mpVoxelFilter->filter(*tmp2);
-                mpGlobalMap->swap(*tmp2);
-            }
-            mbLoopBusy = false;
         }
+        cout << "Finish close looping cloud point" << endl;
+        {
+            PointCloud::Ptr tmp1(new PointCloud());
+            mpUniformFilter->setInputCloud(pPointCloudGlobal);
+            pcl::PointCloud<int> KeyPointIndices;
+            mpUniformFilter->compute(KeyPointIndices);
+            pcl::copyPointCloud(*pPointCloudGlobal, KeyPointIndices.points, *tmp1);
+
+            PointCloud::Ptr tmp2(new PointCloud());
+            mpStatisticalFilter->setInputCloud(tmp1);//删除离群点
+            mpStatisticalFilter->filter(*tmp2);
+            mpGlobalMap->swap(*tmp2);
+        }
+        mbLoopBusy = false;
     }
 }
 

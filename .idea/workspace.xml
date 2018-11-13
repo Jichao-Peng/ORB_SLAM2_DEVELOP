@@ -3,8 +3,8 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="Project" targetName="roscpp_generate_messages_py" />
-      <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="ORB_SLAM2" />
+      <config projectName="Project" targetName="tf2_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="std_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="clean_test_results" />
       <config projectName="Project" targetName="gtest" />
@@ -28,19 +28,19 @@
       <config projectName="Project" targetName="bond_generate_messages_lisp" />
       <config projectName="Project" targetName="actionlib_generate_messages_py" />
       <config projectName="Project" targetName="rgbd_orb_slam2_test" />
-      <config projectName="Project" targetName="pcl_ros_gencfg" />
       <config projectName="Project" targetName="dynamic_reconfigure_generate_messages_cpp" />
+      <config projectName="Project" targetName="pcl_ros_gencfg" />
       <config projectName="Project" targetName="download_extra_data" />
       <config projectName="Project" targetName="run_tests" />
       <config projectName="Project" targetName="geometry_msgs_generate_messages_py" />
       <config projectName="Project" targetName="pcl_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="nodelet_generate_messages_py" />
-      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="roscpp_generate_messages_cpp" />
+      <config projectName="Project" targetName="actionlib_msgs_generate_messages_cpp" />
       <config projectName="Project" targetName="actionlib_generate_messages_lisp" />
       <config projectName="Project" targetName="nodelet_generate_messages_lisp" />
-      <config projectName="Project" targetName="pcl_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="bond_generate_messages_cpp" />
+      <config projectName="Project" targetName="pcl_msgs_generate_messages_lisp" />
       <config projectName="Project" targetName="topic_tools_generate_messages_cpp" />
       <config projectName="Project" targetName="actionlib_msgs_generate_messages_py" />
       <config projectName="Project" targetName="topic_tools_generate_messages_lisp" />
@@ -65,23 +65,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae127fd8-2d5f-472d-9993-f0eb697eca96" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/devel/lib/libORB_SLAM2.so" afterPath="$PROJECT_DIR$/cmake-build-debug/devel/lib/libORB_SLAM2.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/FrameDrawer.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/FrameDrawer.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Initializer.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Initializer.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/LocalMapping.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/LocalMapping.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/LoopClosing.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/LoopClosing.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/MapDrawer.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/MapDrawer.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Optimizer.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Optimizer.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/PointCloudMapping.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/PointCloudMapping.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/System.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/System.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Tracking.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Tracking.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Viewer.cc.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/ORB_SLAM2/src/Viewer.cc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/src/rgbd_orb_slam2.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/src/rgbd_orb_slam2.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/src/rgbd_orb_slam2_test.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/src/rgbd_orb_slam2_test.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/rgbd_orb_slam2" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/rgbd_orb_slam2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/rgbd_orb_slam2_test" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/rgbd_orb_slam2_test" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Project.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/catkin_generated/setup_cached.sh" afterPath="$PROJECT_DIR$/cmake-build-debug/catkin_generated/setup_cached.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/gtest/gtest.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/gtest/gtest.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/ORB_SLAM2.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_ros_test.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/ORB_SLAM2.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_slam2/ORB_SLAM2.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/CMakeLists.txt" afterPath="$PROJECT_DIR$/orb_slam2/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/LoopClosing.h" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/LoopClosing.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/MapDrawer.h" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/MapDrawer.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/PointCloudMapping.h" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/PointCloudMapping.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/System.h" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/System.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/Tracking.h" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/Tracking.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/MapDrawer.cc" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/MapDrawer.cc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Tracking.cc" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Tracking.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Viewer.cc" afterPath="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Viewer.cc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/src/ZR300.yaml" afterPath="$PROJECT_DIR$/orb_slam2/src/ZR300.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.cpp" afterPath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.cpp" afterPath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.h" afterPath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp" afterPath="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -101,8 +140,18 @@
       <file leaf-file-name="System.cc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="316" column="16" lean-forward="false" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
+            <state relative-caret-position="738">
+              <caret line="290" column="29" lean-forward="false" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PointCloudMapping.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -111,38 +160,8 @@
       <file leaf-file-name="rgbd_orb_slam2_test.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/orb_slam2/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="System.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/System.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoopClosing.cc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="759" column="18" lean-forward="false" selection-start-line="759" selection-start-column="18" selection-end-line="759" selection-end-column="18" />
+            <state relative-caret-position="-189">
+              <caret line="16" column="82" lean-forward="true" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -152,36 +171,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>GetAllKeyFrames</find>
-      <find>GetPoseInverse</find>
-      <find>Twc</find>
-      <find>RunGlobalBundleAdjustment</find>
-      <find>UpdateCloud</find>
-      <find>mTcwGBA</find>
-      <find>Cw</find>
-      <find>SetPose</find>
-      <find>s</find>
-      <find>struct</find>
+      <find>bUseViewer</find>
+      <find>FrameDrawer</find>
+      <find>mpFrameDrawer</find>
+      <find>G</find>
+      <find>Ge</find>
+      <find>Get</find>
+      <find>GetI</find>
+      <find>GetIm</find>
+      <find>GetIma</find>
+      <find>GetImage</find>
+      <find>Pointcloud map receive a keyframe</find>
+      <find>Relocalization</find>
+      <find>vpMPs</find>
+      <find>DrawPointCloudMap</find>
+      <find>`</find>
+      <find>mpThreadGBA</find>
+      <find>mMutexGBA</find>
+      <find>isFinishedGBA</find>
+      <find>isRunningGBA</find>
+      <find>CorrectLoop</find>
       <find>mpLocalMapper</find>
-      <find>mpViewer</find>
-      <find>mpTracker</find>
-      <find>mptLoopClosing</find>
-      <find>mptCloudMapViewer</find>
-      <find>mptLocalMapping</find>
-      <find>mpPointCloudMappi</find>
-      <find>mpPointCloudMappin</find>
-      <find>mpLoopCloser</find>
-      <find>mpLoopClose</find>
-      <find>mpLoopClos</find>
-      <find>mpLoopClosi</find>
-      <find>mpLoopClosin</find>
-      <find>mpLoopClosing</find>
-      <find>SetPointCloudMapper</find>
-      <find>mpPointCloudMapper</find>
-      <find>mpPointCloudMappe</find>
-      <find>mpPointCloudMapp</find>
-      <find>mpPointCloudMapping</find>
-      <find>cv_bridge</find>
+      <find>RunGlobalBundleAdjustment</find>
+      <find>CreateNewKeyFrame</find>
+      <find>mMutexKeyPointCloudUpdate</find>
+      <find>mvpKeyPointClouds</find>
+      <find>mMutexKeyPointCloudDeal</find>
+      <find>InsertKeyCloudPoint</find>
+      <find>mMutexGlobalMapDeal</find>
+      <find>UpdateCloud</find>
+      <find>mGlobalMapSize</find>
     </findStrings>
     <replaceStrings>
       <replace>pPointCloud</replace>
@@ -191,6 +210,8 @@
       <replace>argv1</replace>
       <replace>pKf</replace>
       <replace>mpPointCloudMapper</replace>
+      <replace>mConKeyCloudPointUpdated</replace>
+      <replace>musLastKeyPointCloudSize</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -216,19 +237,23 @@
         <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam_ros_test.h" />
         <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.h" />
         <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.cpp" />
-        <option value="$PROJECT_DIR$/orb_slam2/src/TUM1.yaml" />
-        <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp" />
-        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp" />
-        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/PointCloudMapping.h" />
-        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/MapDrawer.cc" />
         <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/MapDrawer.h" />
-        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc" />
         <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/LoopClosing.h" />
-        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Tracking.cc" />
         <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/Tracking.h" />
-        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc" />
         <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/System.h" />
+        <option value="$PROJECT_DIR$/orb_slam2/src/TUM1.yaml" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc" />
+        <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.h" />
+        <option value="$PROJECT_DIR$/orb_slam2/src/ZR300.yaml" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Tracking.cc" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/MapDrawer.cc" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/PointCloudMapping.h" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc" />
+        <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.cpp" />
         <option value="$PROJECT_DIR$/orb_slam2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Viewer.cc" />
+        <option value="$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp" />
       </list>
     </option>
   </component>
@@ -388,6 +413,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orb_slam2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORB_SLAM2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmake_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -916,12 +967,14 @@
       <workItem from="1541754527893" duration="58000" />
       <workItem from="1541771536519" duration="766000" />
       <workItem from="1541776866007" duration="60000" />
-      <workItem from="1541830867075" duration="6034000" />
+      <workItem from="1541830867075" duration="12602000" />
+      <workItem from="1541900846992" duration="10306000" />
+      <workItem from="1541986370525" duration="31842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101513000" />
+    <option name="totallyTimeSpent" value="150229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -936,15 +989,15 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42066807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22860125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23695198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07620042" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34759918" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="88" y="380" width="1809" height="316" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19900498" sideWeight="0.49376947" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1580984" sideWeight="0.49376947" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24156992" sideWeight="0.50623053" order="2" side_tool="true" content_ui="tabs" />
@@ -970,11 +1023,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/MapDrawer.h" />
-    <entry file="file://$PROJECT_DIR$/include/Tracking.h" />
-    <entry file="file://$PROJECT_DIR$/include/System.h" />
-    <entry file="file://$PROJECT_DIR$/include/KeyFrame.h" />
-    <entry file="file://$PROJECT_DIR$/src/KeyFrame.cc" />
     <entry file="file:///usr/include/GL/glew.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1007,41 +1055,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam_ros_test.cpp" />
     <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam_ros_test.h" />
-    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/src/TUM1.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="74" lean-forward="false" selection-start-line="36" selection-start-column="74" selection-end-line="36" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Map.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="64" column="1" lean-forward="false" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/Converter.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1053,13 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="115" column="20" lean-forward="true" selection-start-line="115" selection-start-column="20" selection-end-line="115" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Frame.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,15 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3438">
           <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/KeyFrameDatabase.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4202">
-          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,39 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1365">
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/KeyFrameDatabase.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Viewer.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="29" column="85" lean-forward="false" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LocalMapping.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-457">
-          <caret line="46" column="19" lean-forward="false" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/PointCloudMapping.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,51 +1119,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/MapDrawer.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/MapDrawer.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="45" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/Tracking.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Tracking.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="165" column="1" lean-forward="true" selection-start-line="165" selection-start-column="1" selection-end-line="165" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,42 +1134,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="759" column="18" lean-forward="false" selection-start-line="759" selection-start-column="18" selection-end-line="759" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="316" column="16" lean-forward="false" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/System.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+        <state relative-caret-position="204">
+          <caret line="64" column="7" lean-forward="false" selection-start-line="64" selection-start-column="7" selection-end-line="64" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp">
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/KeyFrameDatabase.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="108" column="21" lean-forward="false" selection-start-line="108" selection-start-column="21" selection-end-line="108" selection-end-column="21" />
+        <state relative-caret-position="3">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/KeyFrameDatabase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="47" column="9" lean-forward="false" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/KeyFrame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="42" column="6" lean-forward="false" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Map.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="81" column="23" lean-forward="false" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Frame.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="123" column="7" lean-forward="false" selection-start-line="123" selection-start-column="7" selection-end-line="123" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/opencv2/imgproc.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="3605" column="18" lean-forward="false" selection-start-line="3605" selection-start-column="18" selection-end-line="3605" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/TUM1.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="973">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="72" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///opt/ros/indigo/share/cv_bridge/cmake/cv_bridgeConfig.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="88" column="7" lean-forward="true" selection-start-line="88" selection-start-column="7" selection-end-line="88" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_ros_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="123" column="1" lean-forward="false" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/pcl-1.7/pcl/pcl_base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="94" column="6" lean-forward="false" selection-start-line="94" selection-start-column="6" selection-end-line="94" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/ZR300.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Tracking.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="1168" column="17" lean-forward="true" selection-start-line="1168" selection-start-column="17" selection-end-line="1168" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/Tracking.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="149" column="9" lean-forward="false" selection-start-line="149" selection-start-column="9" selection-end-line="149" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LocalMapping.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-506">
+          <caret line="113" column="19" lean-forward="false" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/LoopClosing.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13284">
+          <caret line="749" column="12" lean-forward="false" selection-start-line="749" selection-start-column="12" selection-end-line="749" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/orb_slam2/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="370">
+          <caret line="78" column="37" lean-forward="false" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/MapDrawer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1800">
+          <caret line="48" column="33" lean-forward="false" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/Viewer.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/include/PointCloudMapping.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="964">
+          <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="44" column="1" lean-forward="false" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/src/rgbd_orb_slam2_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-189">
+          <caret line="16" column="82" lean-forward="true" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/System.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="290" column="29" lean-forward="false" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orb_slam2/ORB_SLAM2/src/PointCloudMapping.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
           <folding />
         </state>
       </provider>

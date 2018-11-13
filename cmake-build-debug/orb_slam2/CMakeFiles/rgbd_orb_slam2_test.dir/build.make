@@ -212,6 +212,7 @@ orb_slam2/rgbd_orb_slam2_test: /usr/lib/x86_64-linux-gnu/libboost_system.so
 orb_slam2/rgbd_orb_slam2_test: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 orb_slam2/rgbd_orb_slam2_test: /usr/lib/x86_64-linux-gnu/libpthread.so
 orb_slam2/rgbd_orb_slam2_test: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+orb_slam2/rgbd_orb_slam2_test: /opt/ros/indigo/lib/libcv_bridge.so
 orb_slam2/rgbd_orb_slam2_test: orb_slam2/CMakeFiles/rgbd_orb_slam2_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable rgbd_orb_slam2_test"
 	cd /home/leo/Desktop/orb_slam2_project/src/cmake-build-debug/orb_slam2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rgbd_orb_slam2_test.dir/link.txt --verbose=$(VERBOSE)

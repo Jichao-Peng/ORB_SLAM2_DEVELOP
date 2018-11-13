@@ -226,12 +226,13 @@ cv::Mat Tracking::GrabImageRGBD(const cv::Mat &imRGB,const cv::Mat &imD, const d
     if((fabs(mDepthMapFactor-1.0f)>1e-5) || mImDepth.type()!=CV_32F)
         mImDepth.convertTo(mImDepth,CV_32F,mDepthMapFactor);
 
+
     if(mImGray.channels()==3)//RGBD或者RGBA转成灰度图
     {
         if(mbRGB)
-            cvtColor(mImGray,mImGray,CV_RGB2GRAY);
+            cvtColor(mImGray, mImGray, CV_RGB2GRAY);
         else
-            cvtColor(mImGray,mImGray,CV_BGR2GRAY);
+            cvtColor(mImGray, mImGray, CV_BGR2GRAY);
     }
     else if(mImGray.channels()==4)
     {
@@ -1175,13 +1176,13 @@ void Tracking::CreateNewKeyFrame()
         }
     }
 
+    //获取当前所有的关键帧，并给点云模块插入关键点云
+    mpPointCloudMapper->InsertKeyCloudPoint(pKF, mImRGB, mImDepth, pKF->mnFrameId);
+
+    //讲关键帧传给局部地图
     mpLocalMapper->InsertKeyFrame(pKF);
 
     mpLocalMapper->SetNotStop(false);
-
-    //获取当前所有的关键帧，并给点云模块插入关键帧
-    mpPointCloudMapper->InsertKeyFrame( pKF, mImRGB, mImDepth, pKF->mnFrameId);//这里传入vpKFs是用作回环检测时重建三维地图用
-
 
     mnLastKeyFrameId = mCurrentFrame.mnId;
     mpLastKeyFrame = pKF;
@@ -1394,6 +1395,7 @@ void Tracking::UpdateLocalKeyFrames()
 //5. 如果内点满足要求(>50)则成功重定位，将最新重定位的id更新：mnLastRelocFrameId = mCurrentFrame.mnId;　　否则返回false。
 bool Tracking::Relocalization()
 {
+    cout<<"[TRACK] state is lost"<<endl;
     // Compute Bag of Words Vector
     mCurrentFrame.ComputeBoW();
 
